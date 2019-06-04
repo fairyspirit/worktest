@@ -1,0 +1,85 @@
+@import url(../fonts/fonts.css);
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+ }
+	.main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background: url("../img/banner.jpg") no-repeat top center;
+		background-size: cover;	
+		position: relative;
+		z-index: 10;
+		.header {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			height: 129px;
+			margin-top: 26px;
+			z-index: 10;
+			.menu {
+				width: 70%;	
+				ul {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					list-style: none;
+				a {
+					display: block;
+					line-height: 129px;
+					text-decoration: none;
+					font-family: 'RaleweyBold', sans-serif;
+					font-size: 18px;
+					color: #ffffff;
+				}
+			}
+		}
+	}		
+	.headerlogo {
+		margin-top: 35px;
+		margin-bottom: 80px;
+		.headerlogo_logo1 {
+			margin-right: 58px;
+	 		width: 100%;
+			max-width: 100px;
+			outline: none;
+		}
+		.headerlogo_logo2 {
+			width: 100%;
+			max-width: 177px;
+			outline: none;
+		}
+	}
+	.header_content {
+		display: block;
+		font-weight: 800px;
+		max-width: 503px;
+		margin-bottom: 254px;
+		h1{
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 800;
+			font-size: 68px;
+			line-height: 69px;
+			color: #ffffff;
+			padding-bottom: 24px;
+		}
+		p{
+			font-family: 'PTSansBold';
+			font-size: 20px;
+			line-height: 36px;
+			color: #ffffff;
+		}
+	}
+}
+#map{
+	width: 100%;
+	height: 940px;
+
+}
