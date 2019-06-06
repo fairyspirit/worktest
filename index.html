@@ -6,9 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"></script>
 	<script src="js/jquery-2.2.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
@@ -107,17 +110,6 @@
 					</div>
 		</section>
 		<div id="map"></div>
-    <script>
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: {lat: -25.363882, lng: 131.044922 }
-        });
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-    </script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOgNtQjJy5Rofyab_43-BAoWXoA_3OlNY&callback=initMap"></script>
 	<section id="team">
 		<div class="container">
 			<div class="team__members">
@@ -128,7 +120,9 @@
 							<h3>Dion Agee</h3>
 							<p>GENERAL MANAGER</p>
 						</div>
-						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						<div class="team__locate">
+							<p>Mammoth <br> Brewing Co.</p>
+						</div>
 						</div>
 						<div class="team__form">
 							<h4>Hails from:
@@ -151,7 +145,9 @@
 							<h3>Travis Wallentine</h3>
 							<p>HEAD BREWER</p>
 						</div>
-						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						<div class="team__locate">
+							<p>Mammoth <br> Brewing Co.</p>
+						</div>
 						</div>
 						<div class="team__form">
 							<h4>Hails from:
@@ -174,7 +170,9 @@
 							<h3>Steve</h3>
 							<p>SALES DIRECTOR</p>
 						</div>
-						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						<div class="team__locate">
+							<p>Mammoth <br> Brewing Co.</p>
+						</div>
 						</div>
 						<div class="team__form">
 							<h4>Hails from:
@@ -197,7 +195,9 @@
 							<h3>Pam GeeMmm</h3>
 							<p>GENERAL MANAGER</p>
 						</div>
-						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						<div class="team__locate">
+							<p>Great Basin<br> Brewing Co.</p>
+						</div>
 						</div>
 						<div class="team__form">
 							<h4>Hails from:
@@ -220,7 +220,9 @@
 							<h3>Jon Brewright</h3>
 							<p>HEAD BREWER</p>
 						</div>
-						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						<div class="team__locate">
+							<p>Great Basin<br> Brewing Co.</p>
+						</div>
 						</div>
 						<div class="team__form">
 							<h4>Hails from:
@@ -243,7 +245,9 @@
 							<h3>Garret</h3>
 							<p>MARKETING MANAGER</p>
 						</div>
-						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						<div class="team__locate">
+							<p>Great Basin<br> Brewing Co.</p>
+						</div>
 						</div>
 						<div class="team__form">
 							<h4>Hails from:
@@ -262,35 +266,37 @@
 			</div>
 		</div>
 	</section>
-	<section id="contact">
+	<footer>
+	<div id="contact">
 		<div class="contactblock">
 			<h2>Let's Connect</h2>
 			<p>Leave your email address so that we can stay in touch. Hiking, Gardening, or wrangling my 4 dogs </p>
 			<a class="btn" href="#">Contact us</a>
 		</div>
-		<div class="container">
+		<div class="adress container">
 			<h2 class="contact__adress">Address</h2>
 			<div class="contact">
 				<div class="contact__mammoth">
 					<h4 class="contact__title">Mammoth Brewing Co.</h4>
-					<p>Tasting Room, Beer Garden + Retail Store 18 Lake Mary Road Mammoth Lakes, CA 93546</p>
-					<p>(760) 934-7141</p> 
-					<p>info@mammothbrewingco.com</p>    
+					<p class="contact__ad">Tasting Room, Beer Garden + Retail Store 18 Lake Mary Road Mammoth Lakes, CA 93546</p>
+					<p class="contact__tel">(760) 934-7141</p> 
+					<p class="contact__mail">info@mammothbrewingco.com</p>    
 				</div>
 				<div class="contact__basin">
 					<h4 class="contact__title">Great Basin Brewing Co.</h4>
-					<p>846 Victorian Ave Sparks, NV 89431</p>
-					<p>(775) 355-7711</p>  
+					<p class="contact__ad">846 Victorian Ave Sparks, NV 89431</p>
+					<p class="contact__tel">(775) 355-7711</p>  
 				</div>		
 			</div>	
+		</div>
 		</div>
 		<div class="links">
 			<a href="#">mammothbrewingco.com</a>
 			<a href="#">greatbasinbrewingco.com</a>
 		</div>
-	</section>
-	<footer>
+		<div class="copyright">
 		<p>© 2010-2016 Mammoth Brewing Company. Design: The Abbi Agency.   </p>
+	</div>
 		</footer>
 </body>
 </html>

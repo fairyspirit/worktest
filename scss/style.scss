@@ -245,13 +245,23 @@ height: 940px;
 					}
 				}
 				.team__locate {
+					position: relative;
 					margin-top: 27px;
 					color: #f6921e;
 					font-family: 'PTSensItalic';
 					font-style: italic; 
 					font-size: 18px;
 					line-height: 23px;
-					padding-right: 20px;
+					padding-right: 20px;				}
+				.team__locate ::before{
+					content: "\f041";
+					position: absolute;
+					font-family: "FontAwesome";
+					font-size: 35px;
+					font-style: normal;	
+					display: block;
+					line-height: 46px;
+					left: -35px;
 				}
 			}
 			.team__form {
@@ -311,13 +321,7 @@ height: 940px;
 	background-image: linear-gradient(to top, rgba(182, 208, 229, 0), #c6d8e6);
 	height: 100%;
 
-		h2{
-		color: $maincolor;
-		font-family: 'Montserrat',sans-serif;
-		font-weight: 600;
-		font-size: 28px;
-		line-height: 36px;
-	}
+		
 	.contactblock {
 		display: flex;
 		flex-direction: column;
@@ -332,6 +336,13 @@ height: 940px;
 		background-color: #ffffff;
 		position: relative;
 		top: 60px;
+		h2{
+			color: $maincolor;
+			font-family: 'Montserrat',sans-serif;
+			font-weight: 600;
+			font-size: 28px;
+			line-height: 36px;
+		}
 		p {
 			font-family: 'Montserrat',sans-serif;
 			font-weight: 500;
@@ -344,6 +355,7 @@ height: 940px;
 		}
 		.btn {
 			width: 289px;
+			color:	#faf6f3;
 			background-color: #154166;
 			font-family: 'Montserrat';
 			font-weight: bold;
@@ -352,47 +364,128 @@ height: 940px;
 			text-decoration: none;
 			text-transform: uppercase;
 			text-align: center;
-
 		}
-
 	}
-	p {
-		color: #0a4065;
+	.adress {
+		position: relative;
+		top:77px;
+	}
+	h2{
+		color: $maincolor;
 		font-family: 'Montserrat',sans-serif;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 24px;
-		margin-bottom: 24px;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 36px;
 	}
 	.contact {
 		display: flex;
 		width: 50%;
-		padding-left: 34px;
 		justify-content: space-between;
 		margin-top: 36px;
 		position: relative;
+		.contact__title {
+			margin-bottom: 19px;
+			padding-right: 0;
+			font-family: PTSans;
+			font-size: 18px;
+			font-weight: bold;
+			font-style: italic;
+			color: #6f7a84;
+		}
+		p {
+			padding-left: 34px;
+			color: #0a4065;
+			font-family: 'Montserrat',sans-serif;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 24px;
+			max-width: 335px;
+		}	
 		.contact__mammoth {
-			padding-right: 18px;	
-			.contact__title {
+			padding-right: 57px;
+			.contact__ad::before{
+				content: "\f041";
+				left: 0px;
+				position: absolute;
+				font-family: "FontAwesome";
+				font-size: 25px;
+				display: block;
+				opacity: 0.2;
+			}
+			.contact__tel::before{
+				content: "\f095";
+				left: 0px;
+				position: absolute;
+				font-family: "FontAwesome";
+				font-size: 25px;
+				display: block;
+				opacity: 0.2;
+			}
+			.contact__mail::before{
+				content: "\f0e0";
+			left: 0;
+				position: absolute;
+				font-family: "FontAwesome";
+				font-size: 25px;
+				display: block;
+				opacity: 0.2;
 			}	
 		}
+		.contact__basin {
+			.contact__ad::before{
+				content: "\f041";
+				left: 350px;
+				position: absolute;
+				font-family: "FontAwesome";
+				font-size: 25px;
+				display: block;
+				opacity: 0.2;
+			}
+			.contact__tel::before{
+				content: "\f095";
+				left: 350px;
+				position: absolute;
+				font-family: "FontAwesome";
+				font-size: 25px;
+				display: block;
+				opacity: 0.2;
+			}
+		}
+
 	}
 }
 .links {
-	
+	margin-top: 264px;
 	font-family: 'MontserratBold',sans-serif;
 	font-size: 18px;
-
 	line-height: 24px;
 	text-transform: uppercase;
 	text-align: center;
 	a {
 		padding: 0 42px;
-		//color: #ffffff;
+		color: #ffffff;
+		text-decoration: none;
+	}
+	a::before {
+		content: "\f178   ";
+			font-family: "FontAwesome";
+			font-size: 15px;
+			color: #ffffff;
+			line-height: 24px;
 	}
 }
+.copyright {
+	
+	margin-top: 187px;
+	padding-bottom: 76px;
+	text-align: center;
+	color: #0d4268;
+	font-family: 'PTSans', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+}
 footer {
-	background: url("../img/footerbg.png") no-repeat top center;
-	background-size: cover;	
-	height: 545px;
+	background: url("../img/footerbg.png") no-repeat bottom center;
+	background-size: 100%;	
 }
