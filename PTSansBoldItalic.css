@@ -1,9 +1,0 @@
-@font-face {
-    font-family: '2224';
-    src: url('fonts/2224.eot');
-    src: url('fonts/2224.eot') format('embedded-opentype'),
-         url('fonts/2224.woff2') format('woff2'),
-         url('fonts/2224.woff') format('woff'),
-         url('fonts/2224.ttf') format('truetype'),
-         url('fonts/2224.svg#2224') format('svg');
-}

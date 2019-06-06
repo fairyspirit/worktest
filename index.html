@@ -4,13 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-2.2.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
 	<title>Document</title>
 </head>
 <body>
 	<header>
-		<div class="main">
-			<div class="container">
+		<div class="headerbackgraund">
+		<div class="main container">
 				<div class="header">
     			<nav class="menu">
 		  			<ul>
@@ -34,8 +41,8 @@
 					<h1>Start spreading the brews.</h1>
 					<p> <strong>Mammoth Brewing Company</strong> and <strong>Great Basin Brewing</strong><br> Company have joined forces.</p>
 				</div>
-			</div>
 		</div>
+	</div>
 	</header>
 	<section id="culture">
 		<div class="culture__content">
@@ -45,100 +52,245 @@
 			<p>Our breweries have always been places where people come to be with friends and do their best work. Their soul’s work. Their life’s work. Places to chase down their bliss and share it with other kindred souls. We are defined by the unblinking desire to create beers wherein one can, with every sip taken, taste the fullhearted desires of the people who made it and brought it to you.</p> 
 			<p>Whether it’s in Reno or up in the rare Mammoth air, we’re hungry for these things, thirsty for them, forever on the lookout for wild and colorful new ways to connect with and celebrate, one another.</p>
 		</div>
-		<div class="culture__video">
-			<div class="container">
-				<h2>New Adventures In Cheers Making</h2>
-				<video controls="controls" width="100%" height="550px" poster="img/Video.jpg">
-					<source src="video/Space%20Travel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-					<source src="video/Space%20Travel.ogv" type='video/ogg; codecs="theora, vorbis"'>
-					<source src="video/Space%20Travel.webm" type='video/webm; codecs="vp8, vorbis"'>
-			</video>
-			<span>It may sound corny, but it’s true. You don’t get into beer brewing if you don’t care about things like community, friendship, curiosity, self-expression, and joy.</span>
+				<div class="container">
+						<div class="culture__video-title">
+							<h2>New Adventures In Cheers Making</h2>
+							<video controls="controls" width="1037" height="528px" poster="img/Video.jpg">
+								<source src="video/Space%20Travel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="video/Space%20Travel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+								<source src="video/Space%20Travel.webm" type='video/webm; codecs="vp8, vorbis"'>
+						</video>
+							<div class="culture__video-content">
+								<p>It may sound corny, but it’s true. You don’t get into beer brewing if you don’t care about things like community, friendship, curiosity, self-expression, and joy.</p>
+							</div>	
 		</div>
-		</div>
+	</div>
 	</section>
 	<section id="stayingwild">
 			<div class="container">
+				<div class="stayingwild">
+				<div class="stayingwild__photo">
 				<img src="./img/Born and raised.jpg" alt="Mountan">
+			</div>
+				<div class="stayingwild__content">
 				<h3>Born And Raised:</h3>
 				<h2>Our Sierra Mountan culture we adore</h2>
 				<p>It may sound corny, but it’s true. You don’t get into beer brewing if you don’t care about things like community, friendship, curiosity, self-expression, and joy</p>
 				<p>Our breweries have always been places where people come to be with friends and do their best work. Their soul’s work. Their life’s work.</p>
 			</div>
-			<div class="slider">
-
 			</div>
-			
-		</section>
+		</div>
+		<div class="container">
+				<div class="owl-carousel">
+					 <div class="galary">
+							 <img src="img/slide1.jpg">
+					 </div>
+					 <div class="galary">
+							 <img src="img/slide2.jpg">
+					 </div>
+					 <div class="galary">
+							 <img src="img/slide3.jpg">
+					 </div>
+				</div>
+	 </div>
+	</section>
+
 		<section id="value" >
-				<div class="container">
+				<div class="value__content">
 					<h2>What we value the most</h2>
-					<p>It may sound corny, but it’s true. You don’t get into beer brewing if you don’t care about things like community, friendship, curiosity, self-expression, and joy.</p>
+					<p><strong> It may sound corny, but it’s true. You don’t get into beer brewing if you don’t care about things like community, friendship, curiosity, self-expression, and joy.</strong></p>
 					<p>Our breweries have always been places where people come to be with friends and do their best work. Their soul’s work. Their life’s work. Places to chase down their bliss and share it with other kindred souls. We are defined by the unblinking desire to create beers wherein one can, with every sip taken, taste the fullhearted desires of the people who made it and brought it to you.</p>
 					<p>Whether it’s in Reno or up in the rare Mammoth air, we’re hungry for these things, thirsty for them, forever on the lookout for wild and colorful new ways to connect with and celebrate, one another.</p>
-					<img src="./img/independent.png" alt="independent">
 				</div>
+				<div class="imagebg">
+						<img src="./img/independent.png" alt="image">
+					</div>
 		</section>
-	<section id="map">
-			
-	</section>
+		<div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: {lat: -25.363882, lng: 131.044922 }
+        });
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOgNtQjJy5Rofyab_43-BAoWXoA_3OlNY&callback=initMap"></script>
 	<section id="team">
 		<div class="container">
-			<div class="team__member">
-				<img src="./img/Dion.jpg" alt="Dion">
-				<h3>Dion Agee</h3>
-				<span>GENERAL MANAGER</span>
-				<span>Mammoth Brewing Co.</span>
-				<p>Hails from: Alpine, UT</p>
-				<p>Go-To Mammoth Beers:<br>Golden Tout</p>
-				<p>When I'm not at work:<br>When I'm not at work:</p>
-			</div>
-			<div class="team__member">
-				<img src="./img/Travis.jpg" alt="Travis">
-				<h3>Travis Wallentine</h3>
-				<span>HEAD BREWER</span>
-				<span>Mammoth Brewing Co.</span>
-				<p>Hails from: Alpine, UT</p>
-				<p>Go-To Mammoth Beers:<br>Golden Tout</p>
-				<p>When I'm not at work:<br>When I'm not at work:</p>
-			</div>
-			<div class="team__member">
+			<div class="team__members">
+				<div class="team__item">
+					<img src="./img/Dion.jpg" alt="Dion">
+					<div class="team__item-title">
+						<div class="title">
+							<h3>Dion Agee</h3>
+							<p>GENERAL MANAGER</p>
+						</div>
+						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						</div>
+						<div class="team__form">
+							<h4>Hails from:
+								<span>Alpine, UT</span>
+							</h4>
+						</div>
+						<div class="team__goto">
+							<h4>Go-To Mammoth Beers:</h4>
+							<p>Golden Tout</p>
+						</div>
+					<div class="team__notatwork">
+						<h4>When I'm not at work:</h4>
+						<p>Hiking, Gardening, or wrangling my 4 dogs</p>
+					</div>
+				</div>
+				<div class="team__item">
+					<img src="./img/Travis.jpg" alt="Travis">
+					<div class="team__item-title">
+						<div class="title">
+							<h3>Travis Wallentine</h3>
+							<p>HEAD BREWER</p>
+						</div>
+						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						</div>
+						<div class="team__form">
+							<h4>Hails from:
+								<span>Alpine, UT</span>
+							</h4>
+						</div>
+						<div class="team__goto">
+							<h4>Go-To Mammoth Beers:</h4>
+							<p>Golden Tout</p>
+						</div>
+					<div class="team__notatwork">
+						<h4>When I'm not at work:</h4>
+						<p>Hiking, Gardening, or wrangling my 4 dogs</p>
+					</div>
+				</div>
+			<div class="team__item">
 				<img src="./img/Steve.jpg" alt="Steve">
-				<h3>Steve</h3>
-				<span>SALES DIRECTOR</span>
-				<span>Mammoth Brewing Co.</span>
-				<p>Hails from: Alpine, UT</p>
-				<p>Go-To Mammoth Beers:<br>Golden Tout</p>
-				<p>When I'm not at work:<br>When I'm not at work:</p>
-			</div>
-	  	<div class="team__member">
+				<div class="team__item-title">
+						<div class="title">
+							<h3>Steve</h3>
+							<p>SALES DIRECTOR</p>
+						</div>
+						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						</div>
+						<div class="team__form">
+							<h4>Hails from:
+								<span>Alpine, UT</span>
+							</h4>
+						</div>
+						<div class="team__goto">
+							<h4>Go-To Mammoth Beers:</h4>
+							<p>Golden Tout</p>
+						</div>
+					<div class="team__notatwork">
+						<h4>When I'm not at work:</h4>
+						<p>Hiking, Gardening, or wrangling my 4 dogs</p>
+					</div>
+				</div>
+	  	<div class="team__item">
 				<img src="./img/Pam.jpg" alt="Pam">
-				<h3>Pam GeeMmm</h3>
-				<span>GENERAL MANAGER</span>
-				<span>Mammoth Brewing Co.</span>
-				<p>Hails from: Alpine, UT</p>
-				<p>Go-To Mammoth Beers:<br>Golden Tout</p>
-				<p>When I'm not at work:<br>When I'm not at work:</p>
-			</div>
-			 <div class="team__member">
+				<div class="team__item-title">
+						<div class="title">
+							<h3>Pam GeeMmm</h3>
+							<p>GENERAL MANAGER</p>
+						</div>
+						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						</div>
+						<div class="team__form">
+							<h4>Hails from:
+								<span>Alpine, UT</span>
+							</h4>
+						</div>
+						<div class="team__goto">
+							<h4>Go-To Mammoth Beers:</h4>
+							<p>Golden Tout</p>
+						</div>
+					<div class="team__notatwork">
+						<h4>When I'm not at work:</h4>
+						<p>Hiking, Gardening, or wrangling my 4 dogs</p>
+					</div>
+				</div>
+		    <div class="team__item">
 					<img src="./img/Jon.jpg" alt="Jon">
-					<h3>Jon Brewright</h3>
-					<span>HEAD BREWER</span>
-					<span>Mammoth Brewing Co.</span>
-					<p>Hails from: Alpine, UT</p>
-					<p>Go-To Mammoth Beers:<br>Golden Tout</p>
-					<p>When I'm not at work:<br>When I'm not at work:</p>
-			 </div>
-			 <div class="team__member">
+					<div class="team__item-title">
+						<div class="title">
+							<h3>Jon Brewright</h3>
+							<p>HEAD BREWER</p>
+						</div>
+						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						</div>
+						<div class="team__form">
+							<h4>Hails from:
+								<span>Alpine, UT</span>
+							</h4>
+						</div>
+						<div class="team__goto">
+							<h4>Go-To Mammoth Beers:</h4>
+							<p>Golden Tout</p>
+						</div>
+					<div class="team__notatwork">
+						<h4>When I'm not at work:</h4>
+						<p>Hiking, Gardening, or wrangling my 4 dogs</p>
+					</div>
+				</div>
+			 <div class="team__item">
 		 	  	<img src="./img/Garret.jpg" alt="Garret">
-					<h3>Garret</h3>
-					<span>MARKETING MANAGER</span>
-					<span>Mammoth Brewing Co.</span>
-					<p>Hails from: Alpine, UT</p>
-					<p>Go-To Mammoth Beers:<br>Golden Tout</p>
-					<p>When I'm not at work:<br>When I'm not at work:</p>
-			 </div>
+					 <div class="team__item-title">
+						<div class="title">
+							<h3>Garret</h3>
+							<p>MARKETING MANAGER</p>
+						</div>
+						<div class="team__locate">Mammoth <br> Brewing Co.</div>
+						</div>
+						<div class="team__form">
+							<h4>Hails from:
+								<span>Alpine, UT</span>
+							</h4>
+						</div>
+						<div class="team__goto">
+							<h4>Go-To Mammoth Beers:</h4>
+							<p>Golden Tout</p>
+						</div>
+					<div class="team__notatwork">
+						<h4>When I'm not at work:</h4>
+						<p>Hiking, Gardening, or wrangling my 4 dogs</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
+	<section id="contact">
+		<div class="contactblock">
+			<h2>Let's Connect</h2>
+			<p>Leave your email address so that we can stay in touch. Hiking, Gardening, or wrangling my 4 dogs </p>
+			<a class="btn" href="#">Contact us</a>
+		</div>
+		<div class="container">
+			<h2 class="contact__adress">Address</h2>
+			<div class="contact">
+				<div class="contact__mammoth">
+					<h4 class="contact__title">Mammoth Brewing Co.</h4>
+					<p>Tasting Room, Beer Garden + Retail Store 18 Lake Mary Road Mammoth Lakes, CA 93546</p>
+					<p>(760) 934-7141</p> 
+					<p>info@mammothbrewingco.com</p>    
+				</div>
+				<div class="contact__basin">
+					<h4 class="contact__title">Great Basin Brewing Co.</h4>
+					<p>846 Victorian Ave Sparks, NV 89431</p>
+					<p>(775) 355-7711</p>  
+				</div>		
+			</div>	
+		</div>
+		<div class="links">
+			<a href="#">mammothbrewingco.com</a>
+			<a href="#">greatbasinbrewingco.com</a>
+		</div>
+	</section>
+	<footer>
+		<p>© 2010-2016 Mammoth Brewing Company. Design: The Abbi Agency.   </p>
+		</footer>
 </body>
 </html>
