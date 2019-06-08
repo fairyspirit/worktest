@@ -23,10 +23,6 @@ $(document).ready(function(){
 function initMap() {
 	var coordinates = {lat: 38.653572 lng: 119.582971},
 	
-			map = new google.maps.Map(document.getElementById('map'), {
-					center: coordinates,
-					zoom: 10,
-					disableDefaultUI: boolean,
-					scrollwheel: boolean
-			});
-}
+			$(this).closest('.menu').toggleClass('menu_state_open');
+		});
+	});}
