@@ -18,11 +18,14 @@ $(document).ready(function(){
                 items:3
             }
         }
-    });
-});
-function initMap() {
-	var coordinates = {lat: 38.653572 lng: 119.582971},
-	
+		});
+		$(function(){
+		$('.menu__icon').on('click', function(){
+
 			$(this).closest('.menu').toggleClass('menu_state_open');
 		});
-	});}
+		$('.menu__links-item').on('click',function() {
+			$(this).closest('.menu').removeClass('menu_state_open');
+		});
+	});
+	});
