@@ -352,8 +352,6 @@ $maincolor: #1d150f;
 				.team__item-title {
 				display: flex;
 				justify-content: space-between;
-				// max-width: 397px;
-			
 				.title {
 					color: $maincolor;
 					font-size: 24px;
@@ -441,7 +439,6 @@ $maincolor: #1d150f;
 			}
 		}
 	}
-	}
 	.owl-carousel.off {
 		display: flex;
 	}
@@ -486,7 +483,6 @@ $maincolor: #1d150f;
 			display: flex;
 				justify-content: center;
 		}
-
 	}
 }
 #contact {
