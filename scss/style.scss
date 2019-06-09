@@ -228,6 +228,11 @@ $maincolor: #1d150f;
 				@include maintext();
 			}
 		}
+		@media screen and (max-width:1200px){
+			.culture__content {
+				left: 10PX;
+			}
+		}
 	}
 	.culture__video-title{
 		display: flex;
@@ -239,6 +244,20 @@ $maincolor: #1d150f;
 		h2 {
 			@include maintitles();
 			margin-bottom: 28px;
+		}
+		.video {
+			height: 0;
+			overflow: hidden;
+			padding-bottom: 56.25%;
+			position: relative;
+			width: 90%;
+			iframe {
+				height: 100%;
+ 			  left: 0;
+  		  position: absolute;
+    		top: 0;
+    		width: 100%;
+			}
 		}
 		.culture__video-content {
 			max-width: 880px;
@@ -260,7 +279,7 @@ $maincolor: #1d150f;
 		align-items: stretch;
 		max-height: 446px;
 		.stayingwild__photo{
-			widows: 48%;;
+			width: 48%;;
 			img {
 				height: 100%;
 			}
@@ -623,6 +642,13 @@ $maincolor: #1d150f;
 				display: block;
 				opacity: 0.2;
 			}
+		}
+	}
+}
+@media screen and (max-width: 1260px){
+	#contact {
+		.adress {
+			padding-left: 20px;
 		}
 	}
 }

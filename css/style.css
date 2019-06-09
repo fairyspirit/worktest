@@ -183,6 +183,9 @@
         font-size: 18px;
         line-height: 32px;
         color: #1d150f; }
+    @media screen and (max-width: 1200px) {
+      #culture .culture__ingridients .culture__content {
+        left: 10PX; } }
   #culture .culture__video-title {
     display: flex;
     flex-direction: column;
@@ -196,6 +199,18 @@
       line-height: 36px;
       color: #1d150f;
       margin-bottom: 28px; }
+    #culture .culture__video-title .video {
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      width: 90%; }
+      #culture .culture__video-title .video iframe {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%; }
     #culture .culture__video-title .culture__video-content {
       max-width: 880px;
       margin-top: 28px;
@@ -216,7 +231,7 @@
     align-items: stretch;
     max-height: 446px; }
     #stayingwild .stayingwild .stayingwild__photo {
-      widows: 48%; }
+      width: 48%; }
       #stayingwild .stayingwild .stayingwild__photo img {
         height: 100%; }
     #stayingwild .stayingwild .stayingwild__content {
@@ -530,6 +545,10 @@
       font-size: 25px;
       display: block;
       opacity: 0.2; }
+
+@media screen and (max-width: 1260px) {
+  #contact .adress {
+    padding-left: 20px; } }
 
 footer {
   background-image: url("../img/footerbg.png");
