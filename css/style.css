@@ -14,16 +14,16 @@
 .main-head {
   min-height: 960px;
   background-size: cover;
-  background-position: 72% 50%;
+  background-position: 72% 100%;
   position: relative; }
   .main-head::before {
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
-    left: 0;
-    top: 0;
-    background-image: linear-gradient(to bottom, rgba(29, 21, 15, 0), #1d150f); }
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(29, 21, 15, 0), #1d150f);
+    height: 237px; }
   .main-head .main {
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@
         line-height: 21px;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 0 30px;
+        padding: 0 20px;
         margin-top: 41px; }
       .main-head .main .menu .menu__links-item:hover {
         text-decoration: underline; }
@@ -115,17 +115,18 @@
   .headerlogo .headerlogo_logo1 {
     margin-right: 58px;
     width: 100%;
-    max-width: 100px;
     outline: none; }
+    .headerlogo .headerlogo_logo1 img {
+      max-width: 100px; }
   .headerlogo .headerlogo_logo2 {
     width: 100%;
-    max-width: 177px;
     outline: none; }
+    .headerlogo .headerlogo_logo2 img {
+      max-width: 177px; }
 
 .header_content {
   display: block;
   max-width: 503px;
-  margin-bottom: 254px;
   position: relative;
   z-index: 10; }
   .header_content h1 {
@@ -144,7 +145,22 @@
 
 @media screen and (max-width: 1260px) {
   .main {
-    padding-left: 15px; } }
+    padding: 0 30px; } }
+
+@media screen and (max-width: 900px) {
+  .main .headerlogo .headerlogo_logo1 img {
+    max-width: 76px; }
+  .main .headerlogo .headerlogo_logo2 img {
+    max-width: 128px; } }
+
+@media screen and (max-width: 740px) {
+  .main .headerlogo {
+    margin-bottom: 15px;
+    margin-top: 230px; }
+  .main .header_content h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1.2px; } }
 
 #culture {
   background-color: #e2e6e7; }
@@ -185,7 +201,14 @@
         color: #1d150f; }
     @media screen and (max-width: 1200px) {
       #culture .culture__ingridients .culture__content {
-        left: 10PX; } }
+        left: 50px; } }
+  @media screen and (max-width: 980px) {
+    #culture .culture__ingridients .culture__bg {
+      display: none; }
+    #culture .culture__ingridients .culture__content {
+      top: 0;
+      left: 0;
+      max-width: 100%; } }
   #culture .culture__video-title {
     display: flex;
     flex-direction: column;
@@ -214,12 +237,15 @@
     #culture .culture__video-title .culture__video-content {
       max-width: 880px;
       margin-top: 28px;
-      margin-bottom: 40px; }
+      margin-bottom: 1	0px; }
       #culture .culture__video-title .culture__video-content p {
         font-family: 'MontserratRegular',sans-serif;
         font-size: 18px;
         line-height: 32px;
         color: #1d150f; }
+  @media screen and (max-width: 980px) {
+    #culture .culture__video-title {
+      padding-top: 48px; } }
 
 #stayingwild {
   background-color: #e2e6e7;
@@ -228,14 +254,14 @@
   #stayingwild .stayingwild {
     padding-bottom: 15px;
     display: flex;
-    align-items: stretch;
-    max-height: 446px; }
+    flex-direction: row;
+    align-items: stretch; }
     #stayingwild .stayingwild .stayingwild__photo {
-      width: 48%; }
+      width: 50%; }
       #stayingwild .stayingwild .stayingwild__photo img {
-        height: 100%; }
+        height: 100%;
+        max-width: 600px; }
     #stayingwild .stayingwild .stayingwild__content {
-      width: 52%;
       background-color: #ffffff;
       padding: 40px 30px; }
       #stayingwild .stayingwild .stayingwild__content h3 {
@@ -256,6 +282,12 @@
         font-size: 18px;
         line-height: 32px;
         color: #1d150f; }
+  @media screen and (max-width: 600px) {
+    #stayingwild .stayingwild {
+      flex-direction: column;
+      justify-content: center; }
+      #stayingwild .stayingwild .stayingwild__content {
+        width: 100%; } }
   #stayingwild .stayingwild__galary .galary {
     max-height: 300px; }
   #stayingwild .stayingwild__galary .owl-carousel .owl-nav button.owl-prev, #stayingwild .stayingwild__galary .owl-carousel .owl-nav button.owl-next {
@@ -274,6 +306,7 @@
   display: flex;
   align-items: stretch; }
   #value .imagebg {
+    max-width: 20%;
     margin-top: 201px;
     margin-left: 193px;
     flex-basis: 30%; }
@@ -293,6 +326,14 @@
       font-size: 18px;
       line-height: 32px;
       color: #1d150f; }
+
+@media screen and (max-width: 980px) {
+  #value {
+    padding: 56px 50px 80px 48px; }
+    #value .imagebg {
+      display: none; }
+    #value .value__content {
+      padding-left: 0; } }
 
 #map {
   width: 100%;
@@ -427,7 +468,9 @@
     padding: 80px 15px 65px 15px; }
     #team .team__members {
       display: flex;
-      justify-content: center; } }
+      justify-content: center; }
+      #team .team__members .team__item {
+        width: 100%; } }
 
 #contact {
   background-image: linear-gradient(to top, rgba(182, 208, 229, 0), #c6d8e6);
@@ -504,6 +547,7 @@
       margin-bottom: 24px;
       max-width: 335px; }
     #contact .contact .contact__mammoth {
+      position: relative;
       padding-right: 57px; }
       #contact .contact .contact__mammoth .contact__ad::before {
         content: "\f041";
@@ -529,26 +573,35 @@
         font-size: 25px;
         display: block;
         opacity: 0.2; }
-    #contact .contact .contact__basin .contact__ad::before {
-      content: "\f041";
-      left: 350px;
-      position: absolute;
-      font-family: "FontAwesome";
-      font-size: 25px;
-      display: block;
-      opacity: 0.2; }
-    #contact .contact .contact__basin .contact__tel::before {
-      content: "\f095";
-      left: 350px;
-      position: absolute;
-      font-family: "FontAwesome";
-      font-size: 25px;
-      display: block;
-      opacity: 0.2; }
+    #contact .contact .contact__basin {
+      position: relative; }
+      #contact .contact .contact__basin .contact__ad::before {
+        content: "\f041";
+        left: 0px;
+        position: absolute;
+        font-family: "FontAwesome";
+        font-size: 25px;
+        display: block;
+        opacity: 0.2; }
+      #contact .contact .contact__basin .contact__tel::before {
+        content: "\f095";
+        left: 0px;
+        position: absolute;
+        font-family: "FontAwesome";
+        font-size: 25px;
+        display: block;
+        opacity: 0.2; }
 
 @media screen and (max-width: 1260px) {
   #contact .adress {
     padding-left: 20px; } }
+
+@media screen and (max-width: 1100px) {
+  #contact .adress h2 {
+    text-align: center; }
+  #contact .contact {
+    width: 100%;
+    justify-content: center; } }
 
 footer {
   background-image: url("../img/footerbg.png");
