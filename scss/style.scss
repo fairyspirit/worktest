@@ -307,7 +307,6 @@ $maincolor: #1d150f;
     right: 5px;
 }
 }
-
 #value {
 	padding: 76px 0;
 	display: flex;
@@ -337,10 +336,9 @@ $maincolor: #1d150f;
 		font-family: 'MontserratRegular',Arial, Helvetica, sans-serif;
 	}
 }
-}
-
-#map{
-height: 940px;
+#map {
+	width: 100%;
+	height: 940px;
 }
 #team {
 	background-color: #ffffff;
@@ -352,11 +350,13 @@ height: 940px;
 		align-items: stretch;
 		.team__item{
 			img {
-				max-width: 397px;
+				// max-width: 397px;
 			}
-			.team__item-title {
+				.team__item-title {
 				display: flex;
 				justify-content: space-between;
+				// max-width: 397px;
+			
 				.title {
 					color: $maincolor;
 					font-size: 24px;
@@ -445,7 +445,26 @@ height: 940px;
 		}
 	}
 	.owl-carousel.off {
-		display: block;
+		display: flex;
+		// .team__item{
+		// 	justify-content: center;
+		// }
+	}
+}
+@media screen and (max-width: 820px) {
+	#team {
+		background-color: #e2e6e7;
+		padding: 80px 15px 65px 15px;
+		.team__members {
+			display: flex;
+				justify-content: center;
+			.team__item{
+				
+			}
+			
+
+		}
+
 	}
 }
 #contact {
@@ -586,8 +605,14 @@ height: 940px;
 
 	}
 }
-.links {
-	margin-top: 264px;
+
+footer {
+	background-image: url("../img/footerbg.png");
+	background-size: cover;
+	height: 545px;	
+	background-position: bottom;
+	.links {
+	padding-top: 241px;
 	font-family: 'MontserratBold',sans-serif;
 	font-size: 18px;
 	line-height: 24px;
@@ -616,7 +641,4 @@ height: 940px;
 	font-size: 14px;
 	line-height: 16px;
 }
-footer {
-	background: url("../img/footerbg.png") no-repeat bottom center;
-	background-size: 100%;	
 }
