@@ -366,8 +366,41 @@
         font-family: 'PT Sans',sans-serif;
         font-size: 16px;
         line-height: 20px; }
-  #team .owl-carousel.off {
-    display: flex; }
+
+.owl-carousel.off {
+  display: flex; }
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  margin-top: 0;
+  color: #154166;
+  font-size: 12px;
+  line-height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  bottom: -15px;
+  outline: none; }
+
+.owl-prev {
+  left: 45px; }
+
+.owl-next {
+  right: 45px; }
+
+.owl-dots {
+  position: absolute;
+  bottom: 0; }
+
+.owl-carousel button.owl-dot {
+  background-color: #ffffff;
+  width: 8px;
+  height: 8px;
+  margin: 0 10px;
+  border-radius: 4px; }
+
+.owl-carousel button.owl-dot.active {
+  background-color: #154166; }
 
 @media screen and (max-width: 820px) {
   #team {

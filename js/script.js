@@ -6,7 +6,8 @@ $(document).ready(function(){
       margin:30,
 			nav:true,
 			navText : ["<i class='fa fa-long-arrow-left'></i>","<i class='fa fa-long-arrow-right'></i>"],
-      autoplay:true,
+			pagination:false,
+			autoplay:true,
       autoplayTimeout:3000,
       autoplayHoverPause:true,
       responsive:{
@@ -27,6 +28,7 @@ $(document).ready(function(){
 		owlOptions = {
 			loop:true,
 			nav:true,
+			pagination:true,
 			autoplay:true,
 			autoplayTimeout:3000,
 			autoplayHoverPause:true,
