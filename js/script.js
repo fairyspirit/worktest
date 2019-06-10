@@ -64,3 +64,25 @@ $(document).ready(function(){
 		});
 	});
 });
+jQuery(document).ready(function()
+{
+    jQuery(window).scroll(function()
+    {
+        var scroll_top = jQuery(window).scrollTop();
+         
+        if(scroll_top >= 600)
+        {
+            jQuery('[data-btn="toTop"]').addClass('to-top--fixed');
+        }
+        else
+        {
+            jQuery('[data-btn="toTop"]').removeClass('to-top--fixed');
+        }
+    });
+     
+    jQuery('[data-btn="toTop"]').on('click', function(e)
+    {
+        e.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, 100);
+    });
+});

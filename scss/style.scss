@@ -21,6 +21,30 @@ $maincolor: #1d150f;
 	margin: 0;
 	padding: 0;
 }
+.to-top {
+	position: fixed;
+	z-index: 99;
+  right: 29px;
+  bottom: 500px;
+  display: none;
+  width: 43px;
+  height: 86px;
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+	line-height: 86px;
+	background-image: url(../img/Backtotop.png);
+	background-size: cover;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+.to-top:hover {
+  opacity: 1;
+}
+.to-top--fixed {
+  display: inline-block;
+}
 .container {
 	max-width: 1250px;
 	margin: 0 auto;
