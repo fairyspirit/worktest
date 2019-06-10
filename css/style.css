@@ -225,6 +225,9 @@
     @media screen and (max-width: 1200px) {
       #culture .culture__ingridients .culture__content {
         left: 50px; } }
+    @media screen and (max-width: 680px) {
+      #culture .culture__ingridients .culture__content {
+        padding: 40px 15px 56px 15px; } }
   @media screen and (max-width: 980px) {
     #culture .culture__ingridients .culture__bg {
       display: none; }
@@ -273,7 +276,7 @@
 #stayingwild {
   background-color: #e2e6e7;
   padding-top: 40px;
-  padding-bottom: 85px; }
+  padding-bottom: 52px; }
   #stayingwild .stayingwild {
     display: flex;
     flex-direction: row;
@@ -304,8 +307,23 @@
         font-size: 18px;
         line-height: 32px;
         color: #1d150f; }
-    #stayingwild .stayingwild .slider1 {
-      margin: 15px; }
+  #stayingwild .stayingwild__galary {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    #stayingwild .stayingwild__galary .owl-carousel .owl-nav button.owl-prev, #stayingwild .stayingwild__galary .owl-carousel .owl-nav button.owl-next {
+      position: absolute;
+      top: 50%;
+      margin-top: -18px;
+      color: #ffffff;
+      font-size: 30px;
+      outline: none; }
+    #stayingwild .stayingwild__galary .owl-prev {
+      left: 20px; }
+    #stayingwild .stayingwild__galary .owl-next {
+      right: 20px; }
+  @media screen and (max-width: 980px) {
+    #stayingwild .stayingwild__galary {
+      padding: 14px 15px 30px 15px; } }
   @media screen and (max-width: 600px) {
     #stayingwild .stayingwild {
       flex-direction: column;
@@ -318,18 +336,6 @@
           display: block;
           width: 100%;
           height: auto; } }
-  #stayingwild .stayingwild__galary .galary {
-    max-height: 300px; }
-  #stayingwild .stayingwild__galary .owl-carousel .owl-nav button.owl-prev, #stayingwild .stayingwild__galary .owl-carousel .owl-nav button.owl-next {
-    position: absolute;
-    top: 50%;
-    margin-top: -18px;
-    color: #ffffff;
-    font-size: 30px; }
-  #stayingwild .stayingwild__galary .owl-prev {
-    left: 5px; }
-  #stayingwild .stayingwild__galary .owl-next {
-    right: 5px; }
 
 #value {
   padding: 76px 0;
@@ -648,7 +654,7 @@
 footer {
   background-image: url("../img/footerbg.png");
   background-size: cover;
-  height: 545px;
+  height: 569px;
   background-position: bottom; }
   footer .links {
     padding-top: 241px;
@@ -659,7 +665,8 @@ footer {
     text-align: center; }
     footer .links a {
       position: relative;
-      padding: 0 42px;
+      display: inline-block;
+      padding: 0  42px;
       color: #ffffff;
       text-decoration: none; }
     footer .links a::before {

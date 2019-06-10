@@ -300,6 +300,11 @@ $maincolor: #1d150f;
 				left: 50px;
 			}
 		}
+		@media screen and (max-width:680px){
+		.culture__content {
+			padding: 40px 15px 56px 15px;
+		}
+		}
 	}
 	@media screen and (max-width:980px){
 		.culture__ingridients{
@@ -313,6 +318,7 @@ $maincolor: #1d150f;
 			}
 		}
 	}
+	
 	.culture__video-title{
 		display: flex;
 		flex-direction: column;
@@ -357,7 +363,7 @@ $maincolor: #1d150f;
 #stayingwild {
 	background-color: #e2e6e7;
 	padding-top: 40px;
-	padding-bottom: 85px;
+	padding-bottom: 52px;
 	.stayingwild {
 		display: flex;
 		flex-direction: row;
@@ -388,9 +394,29 @@ $maincolor: #1d150f;
 				@include maintext();
 			}
 		}
-		.slider1{
-			margin: 15px;
+	}
+	.stayingwild__galary{
+			padding-top:30px;
+			padding-bottom: 30px;
+		.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+			position: absolute;
+			top: 50%;
+			margin-top: -18px;
+			color: #ffffff;
+			font-size: 30px;
+			outline: none;
 		}
+		.owl-prev {
+			left: 20px;
+		}
+		.owl-next {
+			right: 20px;
+		}
+	}	
+	@media screen and (max-width:980px){
+			.stayingwild__galary{
+				padding: 14px 15px 30px 15px;
+			}
 	}
 	@media screen and (max-width:600px){
 		.stayingwild{
@@ -406,28 +432,10 @@ $maincolor: #1d150f;
 					width: 100%;
 					height: auto;
 				}
-
 			}
 		}
 	}
-	.stayingwild__galary {
-		.galary {
-			max-height: 300px;
-		}
-		.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
-			position: absolute;
-			top: 50%;
-			margin-top: -18px;
-			color: #ffffff;
-			font-size: 30px;
-		}
-		.owl-prev {
-			left: 5px;
-		}
-		.owl-next {
-			right: 5px;
-		}
-	}	
+	
 }
 #value {
 	padding: 76px 0;
@@ -807,7 +815,7 @@ $maincolor: #1d150f;
 footer {
 	background-image: url("../img/footerbg.png");
 	background-size: cover;
-	height: 545px;	
+	height: 569px;	
 	background-position: bottom;
 	.links {
 		padding-top: 241px;
@@ -818,7 +826,8 @@ footer {
 		text-align: center;
 		a {
 			position: relative;
-			padding: 0 42px;
+			display: inline-block;
+			padding:0  42px;
 			color: #ffffff;
 			text-decoration: none;
 		}
