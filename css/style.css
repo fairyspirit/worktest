@@ -31,7 +31,7 @@
 .to-top--fixed {
   display: inline-block; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .to-top {
     bottom: 400px; } }
 
@@ -403,8 +403,55 @@
       padding-left: 0; } }
 
 #map {
+  position: absolute;
+  z-index: 1;
   width: 100%;
   height: 940px; }
+
+.map__title h1 {
+  font-family: 'MontserratBold',sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  color: #1d150f;
+  text-transform: uppercase; }
+
+.map__info-window {
+  right: 841px;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.14);
+  border: solid 2px #154166;
+  background-color: #ffffff;
+  width: 375px;
+  padding: 0 40px 35px 40px; }
+  .map__info-window .map__photo {
+    position: absolute; }
+    .map__info-window .map__photo img {
+      display: block;
+      width: 160px;
+      height: 160px;
+      border-radius: 80px; }
+  .map__info-window .map__info-content {
+    position: relative; }
+    .map__info-window .map__info-content h2 {
+      font-size: 24px;
+      font-family: 'PTSans',sans-serif;
+      color: #f6921e;
+      text-transform: uppercase;
+      padding-top: 104px;
+      padding-bottom: 12px;
+      text-align: center; }
+    .map__info-window .map__info-content h1 {
+      font-family: 'MontserratBold',sans-serif;
+      font-size: 28px;
+      line-height: 36px;
+      color: #1d150f;
+      padding-bottom: 24px;
+      text-align: center; }
+    .map__info-window .map__info-content p {
+      font-family: 'Montserrat',sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+      padding-bottom: 24px; }
 
 #team {
   background-color: #ffffff;
