@@ -86,7 +86,7 @@ $maincolor: #1d150f;
 			margin-top: 41px;
 		}
 		.menu__links-item:hover {
-			text-decoration: underline;
+			color:#e2e6e7;
 		}
 	}
 	.menu_state_open {
@@ -147,12 +147,13 @@ $maincolor: #1d150f;
 		}
 	}
 }
-// @media screen and (max-width:980px){
-// 	.main-head {
-// 		min-height: 723px;
-// 	}
-// }
+@media screen and (max-width:980px){
+	.main-head {
+		min-height: 723px;
+	}
+}
 .headerlogo {
+	margin-left: 95px;
 	margin-top: 35px;
 	margin-bottom: 80px;
 	position: relative;
@@ -174,6 +175,7 @@ $maincolor: #1d150f;
 	}
 }
 .header_content {
+	margin-left: 95px;
 	display: block;
 	max-width: 503px;
 	position: relative;
@@ -188,21 +190,36 @@ $maincolor: #1d150f;
 		letter-spacing: 2.6px;	
 	} 
 	p {
+		margin-right: 39px;
 		font-family: 'PT Sans', sans-serif;
 		font-size: 20px;
 		line-height: 36px;
 		color: #ffffff;
 	}
 }
-@media screen and (max-width:1260px){
+@media screen and (max-width:1200px){
 	.main {
-		padding: 0 30px;
+		.headerlogo{
+			margin-left: 30px;
+		}
+		.header_content{
+			margin-left: 30px;
+		}
 	}
 }
-@media screen and (max-width:900px){
+@media screen and (max-width:980px){
+	.main {
+		.headerlogo{
+			 margin-bottom: 15px;
+			 margin-top: 230px;
+		}
+	}
+}
+@media screen and (max-width:970px){
 	.main {
 		.headerlogo{
 			.headerlogo_logo1 {
+				margin-right: 16px;
 				img {
 					max-width: 76px;
 				}	
@@ -215,14 +232,15 @@ $maincolor: #1d150f;
 		}
 	}
 }
-@media screen and (max-width:740px){
+@media screen and (max-width:660px){
 	.main {
 		.headerlogo{
-			 margin-bottom: 15px;
-			 margin-top: 230px;
+			margin-left: 15px;
 		}
 		.header_content{
+			margin-left: 15px;
 			h1{
+				max-width: 60%;
 				font-size: 32px;
 				line-height: 40px;
 				letter-spacing: 1.2px;
@@ -230,7 +248,16 @@ $maincolor: #1d150f;
 		}
 	}
 }
-
+@media screen and (max-width:535px){
+	.main {
+		.header_content{
+			p {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+	}
+}
 #culture {
 	background-color: #e2e6e7;
 	.culture__ingridients {
@@ -332,7 +359,6 @@ $maincolor: #1d150f;
 	padding-top: 40px;
 	padding-bottom: 85px;
 	.stayingwild {
-		padding-bottom: 15px;
 		display: flex;
 		flex-direction: row;
 		align-items: stretch;
@@ -362,6 +388,9 @@ $maincolor: #1d150f;
 				@include maintext();
 			}
 		}
+		.slider1{
+			margin: 15px;
+		}
 	}
 	@media screen and (max-width:600px){
 		.stayingwild{
@@ -370,13 +399,22 @@ $maincolor: #1d150f;
 			.stayingwild__content{
 				width: 100%;
 			}
+			.stayingwild__photo {
+				width: 100%;
+				img {
+					display: block;
+					width: 100%;
+					height: auto;
+				}
+
+			}
 		}
 	}
 	.stayingwild__galary {
 		.galary {
 			max-height: 300px;
 		}
-		.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+		.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
 			position: absolute;
 			top: 50%;
 			margin-top: -18px;
