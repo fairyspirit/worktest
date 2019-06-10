@@ -31,6 +31,10 @@
 .to-top--fixed {
   display: inline-block; }
 
+@media screen and (max-width: 768px) {
+  .to-top {
+    bottom: 400px; } }
+
 .container {
   max-width: 1250px;
   margin: 0 auto; }
@@ -259,42 +263,45 @@
       top: 0;
       left: 0;
       max-width: 100%; } }
-  #culture .culture__video-title {
+
+#vision {
+  background-color: #e2e6e7; }
+  #vision .culture__video-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #e2e6e7;
     text-align: center; }
-    #culture .culture__video-title h2 {
+    #vision .culture__video-title h2 {
       font-family: 'MontserratBold',sans-serif;
       font-size: 28px;
       line-height: 36px;
       color: #1d150f;
       margin-bottom: 28px; }
-    #culture .culture__video-title .video {
+    #vision .culture__video-title .video {
       height: 0;
       overflow: hidden;
       padding-bottom: 56.25%;
       position: relative;
       width: 90%; }
-      #culture .culture__video-title .video iframe {
+      #vision .culture__video-title .video iframe {
         height: 100%;
         left: 0;
         position: absolute;
         top: 0;
         width: 100%; }
-    #culture .culture__video-title .culture__video-content {
+    #vision .culture__video-title .culture__video-content {
       max-width: 880px;
       margin-top: 28px;
       margin-bottom: 1	0px; }
-      #culture .culture__video-title .culture__video-content p {
+      #vision .culture__video-title .culture__video-content p {
         font-family: 'MontserratRegular',sans-serif;
         font-size: 18px;
         line-height: 32px;
         color: #1d150f; }
   @media screen and (max-width: 980px) {
-    #culture .culture__video-title {
+    #vision .culture__video-title {
       padding-top: 48px; } }
 
 #stayingwild {
