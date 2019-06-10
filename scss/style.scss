@@ -637,7 +637,7 @@ $maincolor: #1d150f;
 #contact {
 	background-image: linear-gradient(to top, rgba(182, 208, 229, 0), #c6d8e6);
 	height: 100%;	
-	.contactblock {
+	.connectblock {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -682,11 +682,7 @@ $maincolor: #1d150f;
 		top:77px;
 	}
 	h2{
-		color: $maincolor;
-		font-family: 'Montserrat',sans-serif;
-		font-weight: 600;
-		font-size: 28px;
-		line-height: 36px;
+		@include maintitles();
 	}
 	.contact {
 		display: flex;
@@ -787,6 +783,27 @@ $maincolor: #1d150f;
 		}
 	}
 }
+@media screen and (max-width: 600px){
+	#contact {
+		.connectblock{
+			top:0;
+			border: none;
+		}
+		.adress {
+			top: 0;
+			padding: 72px 29px 68px 50px;
+			h2{
+				text-align: left;
+			}
+			.contact {
+				flex-direction: column;
+				justify-content: center;
+		
+			}
+		}
+		
+	}
+}
 footer {
 	background-image: url("../img/footerbg.png");
 	background-size: cover;
@@ -800,16 +817,19 @@ footer {
 		text-transform: uppercase;
 		text-align: center;
 		a {
+			position: relative;
 			padding: 0 42px;
 			color: #ffffff;
 			text-decoration: none;
 		}
 		a::before {
 			content: "\f178   ";
+			position: absolute;
 			font-family: "FontAwesome";
 			font-size: 15px;
 			color: #ffffff;
 			line-height: 24px;
+			left:18px;
 		}
 	}
 	.copyright {
@@ -821,4 +841,17 @@ footer {
 		font-size: 14px;
 		line-height: 16px;
 	}
+}
+@media screen and (max-width:600px){
+footer{
+	.links{
+		padding-top: 215px;
+	}
+	.copyright {
+		font-size: 14px;
+		line-height: 16px;
+		margin-top: 179px;
+		padding: 0 70px 68px 71px;
+	}
+}
 }

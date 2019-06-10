@@ -505,7 +505,7 @@
 #contact {
   background-image: linear-gradient(to top, rgba(182, 208, 229, 0), #c6d8e6);
   height: 100%; }
-  #contact .contactblock {
+  #contact .connectblock {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -519,12 +519,12 @@
     background-color: #ffffff;
     position: relative;
     top: 60px; }
-    #contact .contactblock h2 {
+    #contact .connectblock h2 {
       font-family: 'MontserratBold',sans-serif;
       font-size: 28px;
       line-height: 36px;
       color: #1d150f; }
-    #contact .contactblock p {
+    #contact .connectblock p {
       font-family: 'Montserrat',sans-serif;
       font-weight: 500;
       font-size: 18px;
@@ -533,7 +533,7 @@
       margin-top: 48px;
       text-align: center;
       max-width: 362px; }
-    #contact .contactblock .btn {
+    #contact .connectblock .btn {
       width: 289px;
       color: #faf6f3;
       background-color: #154166;
@@ -548,11 +548,10 @@
     position: relative;
     top: 77px; }
   #contact h2 {
-    color: #1d150f;
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 600;
+    font-family: 'MontserratBold',sans-serif;
     font-size: 28px;
-    line-height: 36px; }
+    line-height: 36px;
+    color: #1d150f; }
   #contact .contact {
     display: flex;
     width: 50%;
@@ -633,6 +632,19 @@
     width: 100%;
     justify-content: center; } }
 
+@media screen and (max-width: 600px) {
+  #contact .connectblock {
+    top: 0;
+    border: none; }
+  #contact .adress {
+    top: 0;
+    padding: 72px 29px 68px 50px; }
+    #contact .adress h2 {
+      text-align: left; }
+    #contact .adress .contact {
+      flex-direction: column;
+      justify-content: center; } }
+
 footer {
   background-image: url("../img/footerbg.png");
   background-size: cover;
@@ -646,15 +658,18 @@ footer {
     text-transform: uppercase;
     text-align: center; }
     footer .links a {
+      position: relative;
       padding: 0 42px;
       color: #ffffff;
       text-decoration: none; }
     footer .links a::before {
       content: "\f178   ";
+      position: absolute;
       font-family: "FontAwesome";
       font-size: 15px;
       color: #ffffff;
-      line-height: 24px; }
+      line-height: 24px;
+      left: 18px; }
   footer .copyright {
     margin-top: 187px;
     padding-bottom: 76px;
@@ -663,3 +678,12 @@ footer {
     font-family: 'PTSans', sans-serif;
     font-size: 14px;
     line-height: 16px; }
+
+@media screen and (max-width: 600px) {
+  footer .links {
+    padding-top: 215px; }
+  footer .copyright {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 179px;
+    padding: 0 70px 68px 71px; } }
