@@ -55,6 +55,8 @@ $(document).ready(function(){
 			}
 		});
 	});	
+
+
 	$(function(){
 		$('.menu__icon').on('click', function(){
 			$(this).closest('.menu').toggleClass('menu_state_open');
@@ -64,6 +66,8 @@ $(document).ready(function(){
 		});
 	});
 });
+
+
 jQuery(document).ready(function()
 {
     jQuery(window).scroll(function()

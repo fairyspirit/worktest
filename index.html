@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
 	<title>Document</title>
@@ -113,35 +113,24 @@
 	</div>
 	</div>
 </section>
-		<section id="value" >
-				<div class="value__content">
-					<h2>What we value the most</h2>
-					<p><strong> It may sound corny, but it’s true. You don’t get into beer brewing if you don’t care about things like community, friendship, curiosity, self-expression, and joy.</strong></p>
-					<p>Our breweries have always been places where people come to be with friends and do their best work. Their soul’s work. Their life’s work. Places to chase down their bliss and share it with other kindred souls. We are defined by the unblinking desire to create beers wherein one can, with every sip taken, taste the fullhearted desires of the people who made it and brought it to you.</p>
-					<p>Whether it’s in Reno or up in the rare Mammoth air, we’re hungry for these things, thirsty for them, forever on the lookout for wild and colorful new ways to connect with and celebrate, one another.</p>
-				</div>
-				<div class="imagebg">
-						<img src="./img/independent.png" alt="image">
-					</div>
-		</section>
-		
-	
+<section id="value" >
+	<div class="value__content">
+		<h2>What we value the most</h2>
+		<p><strong> It may sound corny, but it’s true. You don’t get into beer brewing if you don’t care about things like community, friendship, curiosity, self-expression, and joy.</strong></p>
+		<p>Our breweries have always been places where people come to be with friends and do their best work. Their soul’s work. Their life’s work. Places to chase down their bliss and share it with other kindred souls. We are defined by the unblinking desire to create beers wherein one can, with every sip taken, taste the fullhearted desires of the people who made it and brought it to you.</p>
+		<p>Whether it’s in Reno or up in the rare Mammoth air, we’re hungry for these things, thirsty for them, forever on the lookout for wild and colorful new ways to connect with and celebrate, one another.</p>
+	</div>
+	<div class="imagebg">
+		<img src="./img/independent.png" alt="image">
+	</div>
+</section>
+<section class="map">
 	<div class="map__title">
-			<h1>OUR NEW TERRITORY</h1>
-		</div>
-		<div class="map__info-window">
-			<div class="map__photo">
-				<img src="img/bitmap.png" alt="">
-			</div>
-			<div class="map__info-content">
-				<h2>Sean Turner</h2>
-				<h1>Owner & SEO</h1>
-				<p>Here in Oregon we enjoy recreation on pristine wildlands and impeccable craft brews – sometimes both simultaneously. But without protected watersheds and clean water, neither the wild landscapes nor the hoppy, malty beverages we enjoy could thrive.</p>
-				<p>Beer is over 90% water after all, and that water is a product of the land it flows through, so our Northwest microbrews are intimately connected with our Northwest land. Great beer doesn’t start at the tap…</p>
-			</div> 
-		</div>
-		<div id="map">
-			</div>
+		<h1>OUR NEW TERRITORY</h1>
+	</div>
+	<div id="map"></div>
+
+</section>	
 	<section id="team">
 		<div class="container">
 			<div class="team__members owl-carousel slider2">
@@ -331,32 +320,106 @@
 		<p>© 2010-2016 Mammoth Brewing Company. Design: The Abbi Agency.   </p>
 	</div>
 		</footer>
+
+
+
+
+
+
 		<script type="text/javascript">
 		var map;
-	function initMap() {
+		function initMap() {
 		map = new google.maps.Map(document.getElementById('map'), {
-			center: {lat: 38.760994, lng: -119.335038},
+			center: {lat: 38.783968, lng: -119.365820},
 			zoom: 10,
-			styles: [{"featureType": "water","elementType": "geometry","stylers": [{"color": "#e9e9e9"},{"lightness": 17}]},{"featureType": "landscape","elementType": "geometry","stylers": [{"color": "#f5f5f5"},{"lightness": 20}]},{"featureType": "road.highway","elementType": "geometry.fill","stylers": [{"color": "#ffffff"},{"lightness": 17}]},{"featureType": "road.highway","elementType": "geometry.stroke","stylers": [{"color": "#ffffff"},{"lightness": 29},{"weight": 0.2}]},{"featureType": "road.arterial","elementType": "geometry","stylers": [{"color": "#ffffff"},{"lightness": 18}]},{"featureType": "road.local","elementType": "geometry","stylers": [{"color": "#ffffff"},{"lightness": 16}]},{"featureType": "poi","elementType": "geometry","stylers": [{"color": "#f5f5f5"},{"lightness": 21}]},{"featureType": "poi.park","elementType": "geometry","stylers": [{"color": "#dedede"},{"lightness": 21}]},{"elementType": "labels.text.stroke","stylers": [{"visibility": "on"},{"color": "#ffffff"},{"lightness": 16}]},{"elementType": "labels.text.fill","stylers": [{"saturation": 36},{"color": "#333333"},{"lightness": 40}]},{"elementType": "labels.icon","stylers": [{"visibility": "off"}]},{"featureType": "transit","elementType": "geometry","stylers": [{"color": "#f2f2f2"},{"lightness": 19}]},{"featureType": "administrative","elementType": "geometry.fill","stylers": [{"color": "#fefefe"},{"lightness": 20}]},{"featureType": "administrative","elementType": "geometry.stroke","stylers": [{"color": "#fefefe"},{"lightness": 17},{"weight": 1.2}]
-    }
-]
+			disableDefaultUI: Boolean,
+			scrollwheel:Boolean,
+			styles: [{"featureType": "water","elementType": "geometry","stylers": [{"color": "#e9e9e9"},{"lightness": 17}]},{"featureType": "landscape","elementType": "geometry","stylers": [{"color": "#f5f5f5"},{"lightness": 20}]},{"featureType": "road.highway","elementType": "geometry.fill","stylers": [{"color": "#ffffff"},{"lightness": 17}]},{"featureType": "road.highway","elementType": "geometry.stroke","stylers": [{"color": "#ffffff"},{"lightness": 29},{"weight": 0.2}]},{"featureType": "road.arterial","elementType": "geometry","stylers": [{"color": "#ffffff"},{"lightness": 18}]},{"featureType": "road.local","elementType": "geometry","stylers": [{"color": "#ffffff"},{"lightness": 16}]},{"featureType": "poi","elementType": "geometry","stylers": [{"color": "#f5f5f5"},{"lightness": 21}]},{"featureType": "poi.park","elementType": "geometry","stylers": [{"color": "#dedede"},{"lightness": 21}]},{"elementType": "labels.text.stroke","stylers": [{"visibility": "on"},{"color": "#ffffff"},{"lightness": 16}]},{"elementType": "labels.text.fill","stylers": [{"saturation": 36},{"color": "#333333"},{"lightness": 40}]},{"elementType": "labels.icon","stylers": [{"visibility": "off"}]},{"featureType": "transit","elementType": "geometry","stylers": [{"color": "#f2f2f2"},{"lightness": 19}]},{"featureType": "administrative","elementType": "geometry.fill","stylers": [{"color": "#fefefe"},{"lightness": 20}]},{"featureType": "administrative","elementType": "geometry.stroke","stylers": [{"color": "#fefefe"},{"lightness": 17},{"weight": 1.2}]}]
 		});
-		var marker = new google.maps.Marker({
-			position: {lat: 38.636972, lng: -119.72125},
+		var location = [
+			[38.633104, -119.724056, 1]
+			[38.760994, -119.335038, 2]
+		]
+		var normalIcon = 'img/normalIcon.png';
+		var selectedIcon = 'img/selectedIcon';
+		
+		var markerMammoth = new google.maps.Marker({
+			position: {lat: 38.633104, lng: -119.724056},
 			map: map,
 			title: 'Mammoth Brewing Co.',
-			icon: 'img/icon-map.svg'
+			icon: normalIcon
 		});
-		var marker = new google.maps.Marker({
+		var contentString = '<div class="content">'
+			+'<div class="map__info-content">'
+			+'<h2>Sean Turner</h2>'
+			+'<h1>Owner & SEO</h1>'
+			+'<p>Here in Oregon we enjoy recreation on pristine wildlands and impeccable craft brews – sometimes both simultaneously. But without protected watersheds and clean water, neither the wild landscapes nor the hoppy, malty beverages we enjoy could thrive.</p>'
+			+'<p>Beer is over 90% water after all, and that water is a product of the land it flows through, so our Northwest microbrews are intimately connected with our Northwest land. Great beer doesn’t start at the tap…</p>'
+			+'</div>'
+			+'</div>';
+		var infowindow = new google.maps.InfoWindow({
+    	content: contentString,
+    	maxWidth: 504
+		});
+		markerMammoth.addListener('click', function() {
+     	infowindow.open(map, markerMammoth);
+		});
+		var markerBasin = new google.maps.Marker({
 			position: {lat: 38.760994, lng: -119.335038},
 			map: map,
 			title: 'Great Basin Brewing Co.',
-			icon: 'img/icon-map.svg'
+			icon: normalIcon
 		});
+		var contentString2 = '<div class="content">'
+			+'<div class="map__info-content">'
+			+'<h2>Sean Turner</h2>'
+			+'<h1>Owner & SEO</h1>'
+			+'<p>Любой текст</p>'
+			+'<p>Beer is over 90% water after all, and that water is a product of the land it flows through, so our Northwest microbrews are intimately connected with our Northwest land. Great beer doesn’t start at the tap…</p>'
+			+'</div>'
+			+'</div>';
+		var infowindow2 = new google.maps.InfoWindow({
+    	content: contentString2,
+    	maxWidth: 504
+		});
+		markerBasin.addListener('click', function() {
+			 infowindow2.open(map, markerBasin);
+		});
+		var markerCallback = function() {
+    for (var i=0; i<arrayOfMarkers.length; i++) {
+        arrayOfMarkers[i].setIcon(normalIcon);
+    }
+    this.setIcon(selectedIcon);
+	  }
+ 		google.maps.event.addListener(marker,'click',function() {
+
+			if (selectedMarker) {
+			selectedMarker.setIcon(normalIcon);
+			}
+		marker.setIcon(selectedIcon);
+    selectedMarker = marker;
+    }); 
+		
+
 	}
+
 	</script>
 		<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOB4hNSqQ3vD-eRgusimgH-Rx3FlJejnc&callback=initMap">
     </script>
 </body>
 </html>
+
+
+
+<!-- // 	'<div class="content">
+	// 	<div class="map__photo">
+	// 		<img src="img/bitmap.png" alt="">
+	// 	</div>
+	// 	<div class="map__info-content">
+	// 		<h2>Sean Turner</h2>
+	// 		<h1>Owner & SEO</h1>
+	// 		<p>Here in Oregon we enjoy recreation on pristine wildlands and impeccable craft brews – sometimes both simultaneously. But without protected watersheds and clean water, neither the wild landscapes nor the hoppy, malty beverages we enjoy could thrive.</p>
+	// 		<p>Beer is over 90% water after all, and that water is a product of the land it flows through, so our Northwest microbrews are intimately connected with our Northwest land. Great beer doesn’t start at the tap…</p>
+	// 	</div>
+	// </div>' -->

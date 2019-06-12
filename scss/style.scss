@@ -357,9 +357,12 @@ $maincolor: #1d150f;
 		align-items: center;
 		background: #e2e6e7;
 		text-align: center;
+	
 		h2 {
 			@include maintitles();
 			margin-bottom: 28px;
+			max-width: 90%;
+			
 		}
 		.video {
 			height: 0;
@@ -376,9 +379,9 @@ $maincolor: #1d150f;
 			}
 		}
 		.culture__video-content {
-			max-width: 880px;
+			max-width: 90%;
 			margin-top: 28px;
-			margin-bottom: 1	0px;
+			margin-bottom: 10px;
 			p {
 			@include maintext();
 			}
@@ -397,18 +400,19 @@ $maincolor: #1d150f;
 	padding-bottom: 52px;
 	.stayingwild {
 		display: flex;
+		// flex-wrap: wrap;
 		flex-direction: row;
-		align-items: stretch;
 		.stayingwild__photo{
 			width: 50%;
 			img {
 				height: 100%;
-				max-width: 600px;
+				max-width: 100%;
 			}
 		}
 		.stayingwild__content {
 			background-color: #ffffff;
 			padding: 40px 30px;
+			max-width: 50%;
 			h3 {
 				font-family: 'PTSens', sans-serif;
 				text-transform: uppercase;
@@ -454,7 +458,7 @@ $maincolor: #1d150f;
 			flex-direction: column;
 			justify-content: center;
 			.stayingwild__content{
-				width: 100%;
+			max-width: 100%;
 			}
 			.stayingwild__photo {
 				width: 100%;
@@ -504,63 +508,104 @@ $maincolor: #1d150f;
 		}
 	}	
 }
-
-#map {
-position: absolute;
-z-index: 1;
-	width: 100%;
-	height: 940px;
-}
-.map__title {
-	h1{
-		@include maintitles();
-		text-transform: uppercase;
-}
-}
-.map__info-window {
-	right: 841px;
-	box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.14);
-  border: solid 2px #154166;
-  background-color: #ffffff;
-	width: 375px;
-	padding: 0 40px 35px 40px;
-	.map__photo {
+.map {
+	position: relative;
+	.map__title {
 		position: absolute;
-		img {
-			display: block;
+		z-index: 2;
+		top: 109px;
+		left: 95px;
+			h1{
+				@include maintitles();
+				text-transform: uppercase;
+			}
+		}
+	#map {
+		position: relative;
+		z-index: 0;
+		width: 100%;
+		height: 940px;
+		.gm-style-iw::before{
+			content: "";
+			background-image: url(../img/bitmap.png);
+			background-size: 160px 160px;
 			width: 160px;
 			height: 160px;
-			border-radius: 80px;
+			background-repeat: no-repeat; 
+			position: absolute;
+			z-index: 999999999999;
+			top: 24px;
+			left: 50%;
+			margin-left: -80px;
+		} 	
+		.gm-style-iw-a {
+			left: 300px !important;
+			top:500px !important;
+		}
+		.gm-style .gm-style-iw-c {
+			padding-left: 40px;
+			padding-top: 0px;
+			border-radius: 0;
+			box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.14);
+	  	border: solid 2px #154166;
+		 	background-color: #ffffff;
+		 
+		 button {
+			 top: 25px !important;
+			 right: 25px !important;
+			 width: 21px !important;
+			 height: 21px !important;
+		 }  
+		}
+		.gm-style .gm-style-iw-d {
+			margin-right: 40px;
+			margin-bottom: 35px;
+			
+			.content {
+				position: relative;			
+				.map__info-content {
+					h2 {
+						font-size: 24px;
+						font-family: 'PTSans',sans-serif;
+						color: #f6921e;
+						text-transform: uppercase;
+						padding-top: 208px;
+						padding-bottom: 12px;
+						text-align: center;
+					}
+					h1 {
+						@include maintitles();
+						padding-bottom: 24px;
+						text-align: center;
+					}
+					p {
+						font-family:'Montserrat',sans-serif;
+						font-size: 16px;
+						line-height: 24px;
+						color: #000000;
+						padding-bottom: 24px;
+					}
+				
+				}
+			} 
+		}
 
+		.gm-style .gm-style-iw-t::after {
+			display: none;
 		}
-	}
-	.map__info-content {
-		position: relative;
-		h2 {
-			font-size: 24px;
-			font-family: 'PTSans',sans-serif;
-			color: #f6921e;
-			text-transform: uppercase;
-			padding-top: 104px;
-			padding-bottom: 12px;
-			text-align: center;
+	}    	 
+	@media screen and(max-width:900px){
+		#map {
+			height: 800px;
+		}	
+	}  
+	@media screen and(max-width:580px){
+		#map {
+			height: 550px;
 		}
-		h1 {
-			@include maintitles();
-			padding-bottom: 24px;
-			text-align: center;
-		}
-		p {
-			font-family:'Montserrat',sans-serif;
-			font-size: 16px;
-			line-height: 24px;
-			color: #000000;
-			padding-bottom: 24px;
-		}
-	}
+	}                
 }
-
-#team {
+#team {               
 	background-color: #ffffff;
 	padding-top: 120px;
 	.team__members {
