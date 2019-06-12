@@ -330,18 +330,15 @@
 		var map;
 		function initMap() {
 		map = new google.maps.Map(document.getElementById('map'), {
-			center: {lat: 38.783968, lng: -119.365820},
-			zoom: 10,
+			center: {lat: 38.738819, lng: -118.998686},
+			zoom: 9,
 			disableDefaultUI: Boolean,
 			scrollwheel:Boolean,
 			styles: [{"featureType": "water","elementType": "geometry","stylers": [{"color": "#e9e9e9"},{"lightness": 17}]},{"featureType": "landscape","elementType": "geometry","stylers": [{"color": "#f5f5f5"},{"lightness": 20}]},{"featureType": "road.highway","elementType": "geometry.fill","stylers": [{"color": "#ffffff"},{"lightness": 17}]},{"featureType": "road.highway","elementType": "geometry.stroke","stylers": [{"color": "#ffffff"},{"lightness": 29},{"weight": 0.2}]},{"featureType": "road.arterial","elementType": "geometry","stylers": [{"color": "#ffffff"},{"lightness": 18}]},{"featureType": "road.local","elementType": "geometry","stylers": [{"color": "#ffffff"},{"lightness": 16}]},{"featureType": "poi","elementType": "geometry","stylers": [{"color": "#f5f5f5"},{"lightness": 21}]},{"featureType": "poi.park","elementType": "geometry","stylers": [{"color": "#dedede"},{"lightness": 21}]},{"elementType": "labels.text.stroke","stylers": [{"visibility": "on"},{"color": "#ffffff"},{"lightness": 16}]},{"elementType": "labels.text.fill","stylers": [{"saturation": 36},{"color": "#333333"},{"lightness": 40}]},{"elementType": "labels.icon","stylers": [{"visibility": "off"}]},{"featureType": "transit","elementType": "geometry","stylers": [{"color": "#f2f2f2"},{"lightness": 19}]},{"featureType": "administrative","elementType": "geometry.fill","stylers": [{"color": "#fefefe"},{"lightness": 20}]},{"featureType": "administrative","elementType": "geometry.stroke","stylers": [{"color": "#fefefe"},{"lightness": 17},{"weight": 1.2}]}]
 		});
-		var location = [
-			[38.633104, -119.724056, 1]
-			[38.760994, -119.335038, 2]
-		]
+	
 		var normalIcon = 'img/normalIcon.png';
-		var selectedIcon = 'img/selectedIcon';
+		var selectedIcon = 'img/selectedIcon.png';
 		
 		var markerMammoth = new google.maps.Marker({
 			position: {lat: 38.633104, lng: -119.724056},
@@ -354,7 +351,7 @@
 			+'<h2>Sean Turner</h2>'
 			+'<h1>Owner & SEO</h1>'
 			+'<p>Here in Oregon we enjoy recreation on pristine wildlands and impeccable craft brews – sometimes both simultaneously. But without protected watersheds and clean water, neither the wild landscapes nor the hoppy, malty beverages we enjoy could thrive.</p>'
-			+'<p>Beer is over 90% water after all, and that water is a product of the land it flows through, so our Northwest microbrews are intimately connected with our Northwest land. Great beer doesn’t start at the tap…</p>'
+			+'<p>Beer is over 90% water after all, and that water is a product of the land it flows through, so our Northwest microbrews are intimately connected with our Northwest land.</p>'
 			+'</div>'
 			+'</div>';
 		var infowindow = new google.maps.InfoWindow({
@@ -385,20 +382,15 @@
 		markerBasin.addListener('click', function() {
 			 infowindow2.open(map, markerBasin);
 		});
-		var markerCallback = function() {
-    for (var i=0; i<arrayOfMarkers.length; i++) {
-        arrayOfMarkers[i].setIcon(normalIcon);
-    }
-    this.setIcon(selectedIcon);
-	  }
- 		google.maps.event.addListener(marker,'click',function() {
-
-			if (selectedMarker) {
-			selectedMarker.setIcon(normalIcon);
-			}
-		marker.setIcon(selectedIcon);
-    selectedMarker = marker;
-    }); 
+		// var arrayOfMarkers = ['markerMammoth','markerBasin'];
+		
+		// var markerCallback = function() {
+    // for (var i=0; i<arrayOfMarkers.length; i++) {
+    //     arrayOfMarkers[i].setIcon(normalIcon);
+    // }
+    // this.setIcon(selectedIcon);
+	  // }
+		// google.maps.event.addListener(markerMammoth, 'click', markerCallback); 
 		
 
 	}
