@@ -357,7 +357,7 @@ $maincolor: #1d150f;
 		align-items: center;
 		background: #e2e6e7;
 		text-align: center;
-	
+
 		h2 {
 			@include maintitles();
 			margin-bottom: 28px;
@@ -575,11 +575,12 @@ $maincolor: #1d150f;
 		@media screen and (max-width:600px){
 		padding-left: 15px;
 		max-width: 375px;
-		height: 700px;
+		height: 550px;
 		min-width: 375px;		
 		}
-		@media screen and (max-width:600px){
-			height: 550px;
+		@media screen and (max-width:375px){
+			max-width: 320px;
+			max-width: 320px;
 		}
 		&::before{
 			content: "";
@@ -648,9 +649,10 @@ $maincolor: #1d150f;
 				display: flex;
 				justify-content: space-between;
 				.title {
-					color: $maincolor;
+					width: 50%;
+					color: #1d150f;
 					font-size: 24px;
-					font-family: 'MontserratSemiBold', Arial, Helvetica, sans-serif;
+					font-family: 'MontserratSemiBold', sans-serif;
 					margin-top: 22px;
 					line-height: 29px;
 					p {
@@ -663,6 +665,7 @@ $maincolor: #1d150f;
 					}
 				}
 				.team__locate {
+					max-width: 133px;
 					position: relative;
 					margin-top: 27px;
 					color: #f6921e;
@@ -670,7 +673,7 @@ $maincolor: #1d150f;
 					font-style: italic; 
 					font-size: 18px;
 					line-height: 23px;
-					padding-right: 20px;				
+					padding-left: 35px;				
 				}
 				.team__locate ::before{
 					content: "\f041";
@@ -680,7 +683,7 @@ $maincolor: #1d150f;
 					font-style: normal;	
 					display: block;
 					line-height: 46px;
-					left: -35px;
+					left: 0px;
 				}
 			}
 			.team__form {
@@ -985,6 +988,9 @@ footer {
 		line-height: 24px;
 		text-transform: uppercase;
 		text-align: center;
+		@media screen and (max-width:375px){
+			font-size: 15px;
+		}
 		a {
 			position: relative;
 			display: inline-block;
@@ -1015,7 +1021,7 @@ footer {
 @media screen and (max-width:600px){
 footer{
 	.links{
-		padding-top: 215px;
+		padding-top: 215px;			
 	}
 	.copyright {
 		font-size: 14px;

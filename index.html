@@ -11,50 +11,47 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-3.1.0.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/script.js"></script>
 	<title>Document</title>
 </head>
 <body>
-		<div class="to-top" data-btn="toTop">
+	<div class="to-top" data-btn="toTop">
 				&#8593;
-		</div>
+	</div>
 	<header>
 		<div class="main-head" style="background-image: url(img/banner.jpg)">
 			<div class="overlay">
-			<div class="main">
-				<div class="menu">
-					<div class="menu__icon">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
+				<div class="main">
+					<div class="menu">
+						<div class="menu__icon">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="menu__links">
+							<a href="#culture" class="menu__links-item">VISION</a>
+							<a href="#vision" class="menu__links-item">CULTURE</a>
+							<a href="#stayingwild" class="menu__links-item">STAYING WILD</a>
+							<a href="#team" class="menu__links-item">TEAM</a>
+							<a href="#contact" class="menu__links-item">CONTACT</a>
+						</div>
 					</div>
-					<div class="menu__links">
-						<a href="#culture" class="menu__links-item">VISION</a>
-						<a href="#vision" class="menu__links-item">CULTURE</a>
-						<a href="#stayingwild" class="menu__links-item">STAYING WILD</a>
-						<a href="#team" class="menu__links-item">TEAM</a>
-						<a href="#contact" class="menu__links-item">CONTACT</a>
+					<div class="headerlogo">
+						<a class="headerlogo_logo1" href="#">
+							<img src="./img/logo1.png" alt="logo">
+						</a>
+						<a class="headerlogo_logo2" href="#">
+							<img src="./img/logo2.png" alt="logo">
+						</a>
 					</div>
-				</div>
-				<div class="headerlogo">
-					<a class="headerlogo_logo1" href="#">
-						<img src="./img/logo1.png" alt="logo">
-					</a>
-					<a class="headerlogo_logo2" href="#">
-						<img src="./img/logo2.png" alt="logo">
-					</a>
-				</div>
 					<div class="header_content">
 						<h1>Start spreading the brews.</h1>
 						<p> <strong>Mammoth Brewing Company</strong> and <strong>Great Basin Brewing</strong> Company have joined forces.</p>
 					</div>
 				</div>
 			</div>
-			</div>
-		</header>
+		</div>
+	</header>
 <section id="culture">
 	<div class="culture__ingridients">
 		<div class="culture__bg">
@@ -74,7 +71,7 @@
 		<div class="culture__video-title">
 			<h2>New Adventures In Cheers Making</h2>
 			<div class="video">
-					<iframe width="729" height="410" src="https://www.youtube.com/embed/qbyaRdnidrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="729" height="410" src="https://www.youtube.com/embed/XAu_0euguXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>		
 			</div>  
 			<div class="culture__video-content">
 				<p>It may sound corny, but it’s true. You don’t get into beer brewing if you don’t care about things like community, friendship, curiosity, self-expression, and joy.</p>
@@ -95,22 +92,22 @@
 				<p>Our breweries have always been places where people come to be with friends and do their best work. Their soul’s work. Their life’s work.</p>
 			</div>
 		</div>
-	<div class="stayingwild__galary">
-		<div class="owl-carousel slider1">
-		  <div class="galary">
-				<img src="img/slide1.jpg">
-			</div>
-			<div class="galary">
-				<img src="img/slide2.jpg">
-			</div>
-			<div class="galary">
-			  <img src="img/slide3.jpg">
-			</div>
-			<div class="galary">
-				<img src="img/slide3.jpg">
+		<div class="stayingwild__galary">
+			<div class="owl-carousel slider1">
+		 	 <div class="galary">
+					<img src="img/slide1.jpg">
+				</div>
+				<div class="galary">
+					<img src="img/slide2.jpg">
+				</div>
+				<div class="galary">
+				  <img src="img/slide3.jpg">
+				</div>
+				<div class="galary">
+					<img src="img/slide3.jpg">
+				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 </section>
 <section id="value" >
@@ -128,8 +125,8 @@
 	<div class="map__title">
 		<h1>OUR NEW TERRITORY</h1>
 	</div>
-	<div id="map"></div>
-
+	<div id="map">		
+	</div>
 </section>	
 	<section id="team">
 		<div class="container">
@@ -311,20 +308,15 @@
 		</div>	
 	</div>
 </section>
-		<footer>
-					<div class="links">
-			<a href="#">mammothbrewingco.com</a>
-			<a href="#">greatbasinbrewingco.com</a>
-		</div>
-		<div class="copyright">
+<footer>
+	<div class="links">
+		<a href="#">mammothbrewingco.com</a>
+		<a href="#">greatbasinbrewingco.com</a>
+	</div>
+	<div class="copyright">
 		<p>© 2010-2016 Mammoth Brewing Company. Design: The Abbi Agency.   </p>
 	</div>
-		</footer>
-
-
-
-
-
+</footer>
 
 		<script type="text/javascript">
 		var map;
@@ -356,10 +348,13 @@
 			+'</div>';
 		var infowindow = new google.maps.InfoWindow({
     	content: contentString,
-    	maxWidth: 504
+    	wmaxWidth: 504
 		});
 		markerMammoth.addListener('click', function() {
+			markerMammoth.setIcon(selectedIcon);
      	infowindow.open(map, markerMammoth);
+			 infowindow2.close(map, markerBasin);
+			 markerBasin.setIcon(normalIcon);
 		});
 		var markerBasin = new google.maps.Marker({
 			position: {lat: 38.760994, lng: -119.335038},
@@ -380,38 +375,18 @@
     	maxWidth: 504
 		});
 		markerBasin.addListener('click', function() {
+			markerBasin.setIcon(selectedIcon);
 			 infowindow2.open(map, markerBasin);
+			 infowindow.close(map, markerMammoth);
+			 markerMammoth.setIcon(normalIcon);
 		});
-		// var arrayOfMarkers = ['markerMammoth','markerBasin'];
-		
-		// var markerCallback = function() {
-    // for (var i=0; i<arrayOfMarkers.length; i++) {
-    //     arrayOfMarkers[i].setIcon(normalIcon);
-    // }
-    // this.setIcon(selectedIcon);
-	  // }
-		// google.maps.event.addListener(markerMammoth, 'click', markerCallback); 
-		
-
 	}
-
-	</script>
-		<script async defer
+</script>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOB4hNSqQ3vD-eRgusimgH-Rx3FlJejnc&callback=initMap">
-    </script>
+</script>
 </body>
 </html>
-
-
-
-<!-- // 	'<div class="content">
-	// 	<div class="map__photo">
-	// 		<img src="img/bitmap.png" alt="">
-	// 	</div>
-	// 	<div class="map__info-content">
-	// 		<h2>Sean Turner</h2>
-	// 		<h1>Owner & SEO</h1>
-	// 		<p>Here in Oregon we enjoy recreation on pristine wildlands and impeccable craft brews – sometimes both simultaneously. But without protected watersheds and clean water, neither the wild landscapes nor the hoppy, malty beverages we enjoy could thrive.</p>
-	// 		<p>Beer is over 90% water after all, and that water is a product of the land it flows through, so our Northwest microbrews are intimately connected with our Northwest land. Great beer doesn’t start at the tap…</p>
-	// 	</div>
-	// </div>' -->

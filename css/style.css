@@ -469,11 +469,12 @@
       #map .gm-style .gm-style-iw-c {
         padding-left: 15px;
         max-width: 375px;
-        height: 700px;
+        height: 550px;
         min-width: 375px; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 375px) {
       #map .gm-style .gm-style-iw-c {
-        height: 550px; } }
+        max-width: 320px;
+        max-width: 320px; } }
     #map .gm-style .gm-style-iw-c::before {
       content: "";
       background-image: url(../img/selectedIcon.png);
@@ -531,9 +532,10 @@
       display: flex;
       justify-content: space-between; }
       #team .team__members .team__item .team__item-title .title {
+        width: 50%;
         color: #1d150f;
         font-size: 24px;
-        font-family: 'MontserratSemiBold', Arial, Helvetica, sans-serif;
+        font-family: 'MontserratSemiBold', sans-serif;
         margin-top: 22px;
         line-height: 29px; }
         #team .team__members .team__item .team__item-title .title p {
@@ -544,6 +546,7 @@
           line-height: 20px;
           color: #6f7a84; }
       #team .team__members .team__item .team__item-title .team__locate {
+        max-width: 133px;
         position: relative;
         margin-top: 27px;
         color: #f6921e;
@@ -551,7 +554,7 @@
         font-style: italic;
         font-size: 18px;
         line-height: 23px;
-        padding-right: 20px; }
+        padding-left: 35px; }
       #team .team__members .team__item .team__item-title .team__locate ::before {
         content: "\f041";
         position: absolute;
@@ -560,7 +563,7 @@
         font-style: normal;
         display: block;
         line-height: 46px;
-        left: -35px; }
+        left: 0px; }
     #team .team__members .team__item .team__form {
       margin-top: 24px;
       padding-left: 21px; }
@@ -810,6 +813,9 @@ footer {
     line-height: 24px;
     text-transform: uppercase;
     text-align: center; }
+    @media screen and (max-width: 375px) {
+      footer .links {
+        font-size: 15px; } }
     footer .links a {
       position: relative;
       display: inline-block;
