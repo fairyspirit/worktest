@@ -331,7 +331,7 @@
 		var selectedIcon = 'img/selectedIcon.png';
 		
 		var markerMammoth = new google.maps.Marker({
-			position: {lat: 38.633104, lng: -119.724056},
+			position: {lat: 38.833104, lng: -119.724056},
 			map: map,
 			title: 'Mammoth Brewing Co.',
 			icon: normalIcon
@@ -346,7 +346,7 @@
 			+'</div>';
 		var infowindow = new google.maps.InfoWindow({
     	content: contentString,
-    	wmaxWidth: 504
+    	wmaxWidth: 1000
 		});
 		markerMammoth.addListener('click', function() {
 			markerMammoth.setIcon(selectedIcon);
