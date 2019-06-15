@@ -55,7 +55,8 @@
 }
 .main-head {
 	min-height: 960px;
-	background-position: 72% 100% !important;
+	background-position: 72% 100%;
+	background-size: cover;
 	position: relative;
 	&::before {
 		content: "";
