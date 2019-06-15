@@ -429,9 +429,9 @@
   @media screen and (max-width: 1010px) {
     #map {
       height: 700px; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     #map {
-      height: 850px; } }
+      height: 726px; } }
   #map .gm-style-iw-a {
     left: 250px !important;
     top: 450px !important; }
@@ -439,10 +439,10 @@
       #map .gm-style-iw-a {
         left: 0 !important;
         top: 400px !important; } }
-    @media screen and (max-width: 580px) {
+    @media screen and (max-width: 700px) {
       #map .gm-style-iw-a {
         left: 0 !important;
-        top: 450px !important; } }
+        top: 480px !important; } }
   #map .gm-style .gm-style-iw-t::after {
     display: none; }
   #map .gm-style .gm-style-iw-t::before {
@@ -453,12 +453,15 @@
     height: 160px;
     background-repeat: no-repeat;
     position: absolute;
-    z-index: 100;
+    z-index: 99999;
     top: -588px;
     left: -80px; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1010px) {
       #map .gm-style .gm-style-iw-t::before {
-        top: -623px; } }
+        top: -528px; } }
+    @media screen and (max-width: 700px) {
+      #map .gm-style .gm-style-iw-t::before {
+        top: -588px; } }
   #map .gm-style .gm-style-iw-c {
     height: 508px;
     width: 504px;
@@ -473,15 +476,14 @@
       #map .gm-style .gm-style-iw-c {
         width: 700px;
         height: 508px; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 700px) {
       #map .gm-style .gm-style-iw-c {
         padding-left: 15px;
-        max-width: 375px;
-        height: 550px;
-        min-width: 375px; } }
-    @media screen and (max-width: 375px) {
+        min-width: 375px;
+        max-height: 508px !important; } }
+    @media screen and (max-width: 374px) {
       #map .gm-style .gm-style-iw-c {
-        max-width: 320px; } }
+        min-width: 320px; } }
     #map .gm-style .gm-style-iw-c::before {
       content: "";
       background-image: url(../img/selectedIcon.png);
@@ -694,7 +696,7 @@
       text-align: center;
       max-width: 362px; }
     #contact .connectblock .btn {
-      width: 289px;
+      width: 285px;
       color: #faf6f3;
       background-color: #154166;
       font-family: 'Montserrat';
@@ -703,7 +705,15 @@
       line-height: 68px;
       text-decoration: none;
       text-transform: uppercase;
-      text-align: center; }
+      text-align: center;
+      border: solid 2px #154166;
+      cursor: pointer; }
+      #contact .connectblock .btn:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        border: solid 2px #154166;
+        color: #154166;
+        background-color: #c6d8e6; }
   #contact .adress {
     position: relative;
     top: 77px; }

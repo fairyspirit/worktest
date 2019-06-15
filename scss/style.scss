@@ -532,8 +532,8 @@
 	@media screen and (max-width:1010px){
 		height: 700px;
 	}
-	@media screen and (max-width:600px){
-		height: 850px;
+	@media screen and (max-width:700px){
+		height: 726px;
 	}
 	.gm-style-iw-a {
 		left: 250px !important;
@@ -542,9 +542,9 @@
 		left: 0 !important;
 		top: 400px !important;
 		}
-		@media screen and (max-width:580px){
+		@media screen and (max-width:700px){
 		left: 0 !important;
-		top: 450px !important;
+		top: 480px !important;
 		}
 	}
 	.gm-style .gm-style-iw-t::after {
@@ -558,11 +558,14 @@
 		height: 160px;
 		background-repeat: no-repeat; 
 		position: absolute;
-		z-index: 100;
+		z-index:99999;
 		top: -588px;
 		left: -80px;
-		@media screen and (max-width:600px){
-		top: -623px;	
+		@media screen and (max-width:1010px){
+			top: -528px;	
+			}
+		@media screen and (max-width:700px){
+		top: -588px;	
 		}
 	}
 	.gm-style .gm-style-iw-c {
@@ -579,14 +582,13 @@
 		width: 700px;
 		height: 508px;
 			}
-		@media screen and (max-width:600px){
+		@media screen and (max-width:700px){
 		padding-left: 15px;
-		max-width: 375px;
-		height: 550px;
-		min-width: 375px;		
+		min-width: 375px;
+		max-height: 508px !important;	
 		}
-		@media screen and (max-width:375px){
-			max-width: 320px;
+		@media screen and (max-width:374px){
+			min-width: 320px;
 			}
 		&::before{
 			content: "";
@@ -840,7 +842,7 @@
 			max-width: 362px;
 		}
 		.btn {
-			width: 289px;
+			width: 285px;
 			color:	#faf6f3;
 			background-color: #154166;
 			font-family: 'Montserrat';
@@ -850,6 +852,15 @@
 			text-decoration: none;
 			text-transform: uppercase;
 			text-align: center;
+			border: solid 2px #154166;
+			cursor: pointer;
+			&:hover {
+				box-shadow: 0 0 20px rgba(0,0,0,0.5);
+				border-radius: 20px;
+				border: solid 2px #154166;
+				color: #154166;
+				background-color: #c6d8e6;
+			}
 		}
 	}
 	.adress {
