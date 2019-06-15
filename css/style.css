@@ -41,8 +41,7 @@
 
 .main-head {
   min-height: 960px;
-  background-size: cover;
-  background-position: 72% 100%;
+  background-position: 72% 100% !important;
   position: relative; }
   .main-head::before {
     content: "";
@@ -520,14 +519,14 @@
         font-size: 28px;
         line-height: 36px;
         color: #1d150f;
-        padding-bottom: 24px;
+        padding-bottom: 20px;
         text-align: center; }
       #map .gm-style .gm-style-iw-d .content .map__info-content p {
         font-family: 'Montserrat',sans-serif;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 20px;
         color: #000000;
-        padding-bottom: 24px; }
+        padding-bottom: 20px; }
 
 #team {
   background-color: #ffffff;
