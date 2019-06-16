@@ -39,10 +39,15 @@
   max-width: 1250px;
   margin: 0 auto; }
 
-.main-head {
+.parallax-window {
   min-height: 960px;
-  background-position: 72% 100%;
-  background-size: cover;
+  background: transparent;
+  background-position: 72% 0 !important; }
+  @media screen and (max-width: 980px) {
+    .parallax-window {
+      min-height: 723px; } }
+
+.main-head {
   position: relative; }
   .main-head::before {
     content: "";
@@ -134,10 +139,6 @@
         padding: 10px 0;
         text-align: center;
         color: #ffffff; } }
-
-@media screen and (max-width: 980px) {
-  .main-head {
-    min-height: 723px; } }
 
 .headerlogo {
   margin-top: 35px;
