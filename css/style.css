@@ -709,11 +709,7 @@
       border: solid 2px #154166;
       cursor: pointer; }
       #contact .connectblock .btn:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        border-radius: 20px;
-        border: solid 2px #154166;
-        color: #154166;
-        background-color: #c6d8e6; }
+        opacity: 0.8; }
   #contact .adress {
     position: relative;
     top: 77px; }
@@ -838,7 +834,17 @@ footer {
       display: inline-block;
       padding: 0  42px;
       color: #ffffff;
-      text-decoration: none; }
+      text-decoration: none;
+      line-height: 24px; }
+      footer .links a:after {
+        display: block;
+        content: "";
+        height: 2px;
+        width: 0%;
+        background-color: #6f7a84;
+        transition: width .3s ease-in-out; }
+      footer .links a:hover:after, footer .links a:focus:after {
+        width: 100%; }
     footer .links a::before {
       content: "\f178   ";
       position: absolute;

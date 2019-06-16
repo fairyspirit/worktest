@@ -855,11 +855,7 @@
 			border: solid 2px #154166;
 			cursor: pointer;
 			&:hover {
-				box-shadow: 0 0 20px rgba(0,0,0,0.5);
-				border-radius: 20px;
-				border: solid 2px #154166;
-				color: #154166;
-				background-color: #c6d8e6;
+				opacity: 0.8;
 			}
 		}
 	}
@@ -1014,6 +1010,19 @@ footer {
 			padding:0  42px;
 			color: #ffffff;
 			text-decoration: none;
+			line-height: 24px;
+			&:after {
+				display: block;
+				content: "";
+				height: 2px;
+				width: 0%;
+				background-color:#6f7a84;
+				transition: width .3s ease-in-out;
+			}
+			&:hover:after,
+			&:focus:after {
+					width: 100%;
+			}
 		}
 		a::before {
 			content: "\f178   ";
