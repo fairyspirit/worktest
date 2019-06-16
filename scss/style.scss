@@ -395,6 +395,9 @@
 			margin-bottom: 40px;
 			p {
 			@include maintext();
+			@media screen and (max-width:800px){
+				font-size: 16px;
+			}
 			}
 		}
 	}

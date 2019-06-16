@@ -312,6 +312,9 @@
         font-size: 18px;
         line-height: 32px;
         color: #1d150f; }
+        @media screen and (max-width: 800px) {
+          #vision .culture__video-title .culture__video-content p {
+            font-size: 16px; } }
   @media screen and (max-width: 980px) {
     #vision .culture__video-title {
       padding-top: 48px; } }
