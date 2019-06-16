@@ -215,6 +215,7 @@
   background-color: #e2e6e7; }
   #culture .culture__ingridients {
     position: relative;
+    left: 0px;
     margin-bottom: -59px; }
     #culture .culture__ingridients .culture__bg {
       position: absolute;
@@ -222,12 +223,12 @@
       right: 0px; }
       #culture .culture__ingridients .culture__bg img {
         display: block;
-        width: 502px; }
+        width: 407px; }
     #culture .culture__ingridients .culture__content {
       position: relative;
       background: #ffffff;
       top: -160px;
-      left: 0px;
+      left: 106px;
       max-width: 824px;
       padding: 60px 77px 92px 77px;
       box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.14); }
@@ -257,7 +258,13 @@
         padding: 40px 15px 56px 15px; }
         #culture .culture__ingridients .culture__content h3 {
           font-size: 18px;
-          line-height: 21px; } }
+          line-height: 21px; }
+        #culture .culture__ingridients .culture__content h2 {
+          font-size: 24px;
+          line-height: 32px; }
+        #culture .culture__ingridients .culture__content p {
+          font-size: 16px;
+          line-height: 24px; } }
   @media screen and (max-width: 980px) {
     #culture .culture__ingridients {
       margin-bottom: 0; }
@@ -313,6 +320,9 @@
   background-color: #e2e6e7;
   padding-top: 40px;
   padding-bottom: 52px; }
+  @media screen and (max-width: 1000px) {
+    #stayingwild {
+      padding-bottom: 0; } }
   #stayingwild .stayingwild {
     display: flex;
     flex-direction: row; }
@@ -320,7 +330,7 @@
       width: 50%; }
       #stayingwild .stayingwild .stayingwild__photo img {
         height: 100%;
-        max-width: 100%; }
+        width: 100%; }
     #stayingwild .stayingwild .stayingwild__content {
       background-color: #ffffff;
       padding: 40px 30px;
@@ -358,8 +368,20 @@
     #stayingwild .stayingwild__galary .owl-next {
       right: 20px; }
   @media screen and (max-width: 980px) {
+    #stayingwild .stayingwild .stayingwild__content {
+      padding: 32px 15px 34px 15px; }
     #stayingwild .stayingwild__galary {
       padding: 14px 15px 30px 15px; } }
+  @media screen and (max-width: 740px) {
+    #stayingwild .stayingwild .stayingwild__content h3 {
+      font-size: 18px;
+      line-height: 21px; }
+    #stayingwild .stayingwild .stayingwild__content h2 {
+      font-size: 24px;
+      line-height: 32px; }
+    #stayingwild .stayingwild .stayingwild__content p {
+      font-size: 16px;
+      line-height: 24px; } }
   @media screen and (max-width: 600px) {
     #stayingwild .stayingwild {
       flex-direction: column;
@@ -374,38 +396,49 @@
           height: auto; } }
 
 #value {
-  padding: 76px 0;
+  padding: 76px 98px 76px 106px;
   display: flex;
-  align-items: stretch; }
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
   #value .imagebg {
-    max-width: 20%;
-    margin-top: 201px;
-    margin-left: 193px;
-    flex-basis: 30%; }
+    padding-top: 91px;
+    max-width: 20%; }
     #value .imagebg img {
-      max-width: 86px; }
+      display: block;
+      width: 86px;
+      height: 156px; }
   #value .value__content {
-    max-width: 820px;
-    padding-left: 201px; }
+    padding-right: 42px;
+    display: inline-block;
+    max-width: 80%; }
     #value .value__content h2 {
       font-family: 'MontserratSemiBold',sans-serif;
       font-size: 28px;
       line-height: 36px;
-      color: #1d150f; }
+      color: #1d150f;
+      margin-bottom: 23px; }
     #value .value__content p {
-      margin-top: 24px;
+      padding-top: 24px;
       font-family: 'MontserratRegular',sans-serif;
       font-size: 18px;
       line-height: 32px;
       color: #1d150f; }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   #value {
     padding: 56px 50px 80px 48px; }
     #value .imagebg {
       display: none; }
     #value .value__content {
-      padding-left: 0; } }
+      padding-right: 0;
+      max-width: 100%; }
+      #value .value__content h2 {
+        font-size: 24px;
+        line-height: 36px; }
+      #value .value__content p {
+        font-size: 16px;
+        line-height: 32px; } }
 
 .map {
   position: relative; }
@@ -713,7 +746,7 @@
       border: solid 2px #154166;
       cursor: pointer; }
       #contact .connectblock .btn:hover {
-        opacity: 0.8; }
+        opacity: 0.7; }
   #contact .adress {
     position: relative;
     top: 77px; }
