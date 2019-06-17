@@ -859,7 +859,7 @@ footer {
   background-image: url("../img/footerbg.png");
   background-size: cover;
   height: 569px;
-  background-position: bottom; }
+  background-position: top; }
   footer .links {
     padding-top: 241px;
     font-family: 'MontserratBold',sans-serif;
@@ -870,6 +870,9 @@ footer {
     @media screen and (max-width: 375px) {
       footer .links {
         font-size: 15px; } }
+    @media screen and (min-width: 1600px) {
+      footer .links {
+        padding-top: 300px; } }
     footer .links a {
       position: relative;
       display: inline-block;
@@ -902,6 +905,9 @@ footer {
     font-family: 'PTSans', sans-serif;
     font-size: 14px;
     line-height: 16px; }
+    @media screen and (min-width: 1600px) {
+      footer .copyright {
+        padding-bottom: 30px; } }
 
 @media screen and (max-width: 600px) {
   footer .links {

@@ -1046,7 +1046,7 @@ footer {
 	background-image: url("../img/footerbg.png");
 	background-size: cover;
 	height: 569px;	
-	background-position: bottom;
+	background-position: top;
 	.links {
 		padding-top: 241px;
 		font-family: 'MontserratBold',sans-serif;
@@ -1056,6 +1056,9 @@ footer {
 		text-align: center;
 		@media screen and (max-width:375px){
 			font-size: 15px;
+		}
+		@media screen and (min-width:1600px){
+			padding-top: 300px;
 		}
 		a {
 			position: relative;
@@ -1095,6 +1098,9 @@ footer {
 		font-family: 'PTSans', sans-serif;
 		font-size: 14px;
 		line-height: 16px;
+		@media screen and (min-width:1600px){
+			padding-bottom: 30px;
+		}
 	}
 }
 @media screen and (max-width:600px){
