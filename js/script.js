@@ -1,4 +1,14 @@
+$('.menu__links a').on('click', function(e) {
+  e.preventDefault();
+  var href = $(this).attr('href');
 
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop: $(href).offset().top
+    },
+    2000
+  );
+});
 $(document).ready(function(){
 	$(function() {
   	$('.slider1').owlCarousel({
@@ -87,6 +97,6 @@ jQuery(document).ready(function()
     jQuery('[data-btn="toTop"]').on('click', function(e)
     {
         e.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, 100);
+        jQuery('html, body').animate({scrollTop: 0}, 1500);
     });
 });

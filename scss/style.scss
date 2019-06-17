@@ -1071,7 +1071,7 @@ footer {
 			&:after {
 				display: block;
 				content: "";
-				margin-top: -6px;
+				margin-top: -5px;
 				height: 2px;
 				width: 100%;
 				background-color:#708A9F;
@@ -1092,7 +1092,7 @@ footer {
 			left:18px;
 		}
 		a:hover::before {
-			transition: .3;
+			transition: .3s;
 				left: 23px;
 				color: #708A9F;
 		}

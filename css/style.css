@@ -883,7 +883,7 @@ footer {
       footer .links a:after {
         display: block;
         content: "";
-        margin-top: -6px;
+        margin-top: -5px;
         height: 2px;
         width: 100%;
         background-color: #708A9F;
@@ -899,7 +899,7 @@ footer {
       line-height: 24px;
       left: 18px; }
     footer .links a:hover::before {
-      transition: .3;
+      transition: .3s;
       left: 23px;
       color: #708A9F; }
   footer .copyright {
