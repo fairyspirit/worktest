@@ -771,9 +771,8 @@
       color: #6f7a84; }
     #contact .contact p {
       padding-left: 34px;
-      color: #0a4065;
       font-family: 'Montserrat',sans-serif;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 24px;
@@ -781,6 +780,11 @@
       @media screen and (max-width: 375px) {
         #contact .contact p {
           font-size: 13px; } }
+      #contact .contact p a {
+        text-decoration: none;
+        color: #0a4065; }
+        #contact .contact p a:hover {
+          color: #116cab; }
     #contact .contact .contact__mammoth {
       position: relative;
       padding-right: 57px; }
@@ -827,7 +831,7 @@
         display: block;
         opacity: 0.2; }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1300px) {
   #contact .adress {
     padding-left: 20px; } }
 
@@ -879,12 +883,13 @@ footer {
       footer .links a:after {
         display: block;
         content: "";
+        margin-top: -6px;
         height: 2px;
-        width: 0%;
-        background-color: #6f7a84;
+        width: 100%;
+        background-color: #708A9F;
         transition: width .3s ease-in-out; }
       footer .links a:hover:after, footer .links a:focus:after {
-        width: 100%; }
+        width: 0%; }
     footer .links a::before {
       content: "\f178   ";
       position: absolute;
@@ -893,6 +898,10 @@ footer {
       color: #ffffff;
       line-height: 24px;
       left: 18px; }
+    footer .links a:hover::before {
+      transition: .3;
+      left: 23px;
+      color: #708A9F; }
   footer .copyright {
     margin-top: 187px;
     padding-bottom: 76px;

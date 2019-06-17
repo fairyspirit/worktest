@@ -931,15 +931,21 @@
 		}
 		p {
 			padding-left: 34px;
-			color: #0a4065;
 			font-family: 'Montserrat',sans-serif;
-			font-weight: 500;
+			font-weight: 600;
 			font-size: 16px;
 			line-height: 24px;
 			margin-bottom: 24px;
 			max-width: 335px;
 			@media screen and (max-width:375px){
 				font-size: 13px;	
+			}
+			a {
+				text-decoration: none;
+				color: #0a4065;
+				&:hover {
+					color: lighten(#0a4065, 15%);
+				}
 			}
 		}	
 		.contact__mammoth {
@@ -996,7 +1002,7 @@
 		}
 	}
 }
-@media screen and (max-width: 1260px){
+@media screen and (max-width: 1300px){
 	#contact {
 		.adress {
 			padding-left: 20px;
@@ -1065,14 +1071,15 @@ footer {
 			&:after {
 				display: block;
 				content: "";
+				margin-top: -6px;
 				height: 2px;
-				width: 0%;
-				background-color:#6f7a84;
+				width: 100%;
+				background-color:#708A9F;
 				transition: width .3s ease-in-out;
 			}
 			&:hover:after,
 			&:focus:after {
-					width: 100%;
+					width: 0%;
 			}
 		}
 		a::before {
@@ -1083,6 +1090,11 @@ footer {
 			color: #ffffff;
 			line-height: 24px;
 			left:18px;
+		}
+		a:hover::before {
+			transition: .3;
+				left: 23px;
+				color: #708A9F;
 		}
 	}
 	.copyright {
