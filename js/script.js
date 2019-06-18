@@ -1,3 +1,7 @@
+$(document).ready(function() {
+	$('.preloader').fadeOut('slow');
+ });
+
 $('.menu__links a').on('click', function(e) {
   e.preventDefault();
   var href = $(this).attr('href');
