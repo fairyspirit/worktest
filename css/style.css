@@ -707,6 +707,7 @@
   background-image: linear-gradient(to top, rgba(182, 208, 229, 0), #c6d8e6);
   height: 100%; }
   #contact .connectblock {
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
